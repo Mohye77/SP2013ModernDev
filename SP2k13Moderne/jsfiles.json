@@ -1,0 +1,22 @@
+{
+	"clean":
+	[
+		"assets/src/js/plugins/*.js"
+	],
+
+	"libs" :
+	[
+		"node_modules/babel-es6-polyfill/browser-polyfill.js",
+		"node_modules/jquery/dist/jquery.js",
+		"node_modules/bootstrap-sass/assets/javascripts/bootstrap.js"
+	],
+
+	"plugins":
+	[
+		"node_modules/cookie_js/cookie.js",
+		"node_modules/polyfill-array-includes/array-includes.js",
+		"node_modules/jquery.scrollTo/jquery.scrollTo.js",
+		"node_modules/typeahead.js/dist/typeahead.bundle.js",
+		"node_modules/jsrender/jsrender.js"
+	]
+}

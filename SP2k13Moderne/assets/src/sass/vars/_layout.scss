@@ -1,0 +1,125 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+
+//== Breadcrumbs
+//
+//##
+$breadcrumb-padding:			0 0 40px;
+$breadcrumb-padding-md:			0 0 60px;
+
+//** Breadcrumb background color
+$breadcrumb-bg:                 $white !default;
+//** Breadcrumb text color
+$breadcrumb-color:              $gray !default;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       $gray !default;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          ">" !default;
+
+$breadcrumb-border-color: 	$gray-lighter !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+
+/**
+ * Spacings
+ ******************************************/
+$spacing: 			20px !default;
+$spacing-xs: 		$spacing * .5 !default;
+$spacing-md: 		$spacing * 2 !default;
+$spacing-lg: 		$spacing * 3 !default;
+$spacing-xl: 		$spacing * 4 !default;
+
+
+
+
+/**
+ * Top Header
+ ******************************************/
+$top-header-h: 					36px !default;
+$top-header-bg: 				$gray-darker !default;
+$top-header-color: 				$gray-light !default;
+$top-header-font-size: 			$font-size-base !default;
+$top-header-padding: 			0 15px !default;
+$top-header-btn-padding: 		10px 15px !default;
+$top-header-btn-bg-hover: 		#4c4c4c !default;
+$top-header-btn-color-hover: 	$white !default;
+$top-header-dropdown-bg: 		$top-header-btn-bg-hover !default;
+$top-header-dropdown-color: 	#a9a9a9 !default;
+
+/**
+ * Header
+ ******************************************/
+
+// Logo
+$header-bg: 						$white !default;
+
+$header-logo-w: 					200px !default;
+$header-logo-padding: 				$spacing-xs !default;
+$header-logo-padding-md: 			$spacing-md $spacing !default;
+
+// Title
+$header-title-padding: 				$spacing-xs !default;
+$header-title-padding-md: 			0 $spacing-md !default;
+
+
+
+// Button actions
+$header-actions-btn-w: 				50px !default;
+$header-actions-btn-h: 				50px !default;
+$header-actions-btn-w-sm: 			70px !default;
+$header-actions-btn-h-sm: 			100px !default;
+$header-actions-btn-color: 			$gray-light !default;
+$header-actions-btn-hover-color: 	$gray !default;
+$header-actions-btn-active-bg: 		$gray-lighter !default;
+$header-actions-btn-active-color: 	$gray !default;
+$header-actions-btn-icon-size: 		24px !default;
+
+// Search
+$header-search-bg: 					$header-actions-btn-active-bg !default;
+$header-search-w: 					660px !default;
+
+
+/**
+ * Content
+ ******************************************/
+$content-bg: 					#f1f1f1 !default;
+
+/**
+ * Sidebar
+ ******************************************/
+$sidebar-w: 						260px !default;
+$sidebar-bg: 						$header-actions-btn-active-bg !default;
+$sidebar-bg-md: 					$white !default;
+$sidebar-padding: 					$spacing !default;
+$sidebar-footer-bg: 				$white !default;
+
+/**
+ * Main
+ ******************************************/
+$main-padding: 						$spacing-xs !default;
+$main-padding-md: 					30px !default;
+
+
+/**
+ * Blocks
+ ******************************************/
+$content-block-padding: 			$spacing !default;
+$content-block-padding-md: 			30px !default;
+
+
+$highchart-wrapper-w-offset: 				$main-padding * 2 + $content-block-padding * 2 !default;
+$highchart-wrapper-w-offset-md: 			$main-padding-md * 2 + $content-block-padding-md * 2 !default;
+
+
+/**
+ * Disclaimer
+ ******************************************/
+$disclaimer-bg: 					$brand-primary !default;
+$disclaimer-block-bg: 				$white !default;
+$disclaimer-block-padding: 			$spacing !default;
+$disclaimer-block-padding-md: 		$spacing-md !default;
+$disclaimer-text-bg: 				#e8edf3 !default;

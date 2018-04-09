@@ -1,0 +1,34 @@
+/* =================================================================================== 
+ * File : contact.scss
+ * Description : Contact page
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+#contact-form
+{
+	
+	.form-control
+	{
+		padding: 20px $padding-base-horizontal;
+	}
+
+	select.form-control
+	{
+        height: 42px;
+        padding: 0px $padding-base-horizontal;
+	}
+
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+	}
+}

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="images" Path="images" Url="Style Library/SP2k13Moderne/images" RootWebOnly="TRUE">
+    <File Path="favicon\favicon.ico" Url="favicon/favicon.ico" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\siteIcon.png" Url="logos/siteIcon.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

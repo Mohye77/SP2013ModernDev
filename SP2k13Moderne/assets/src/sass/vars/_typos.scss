@@ -1,0 +1,70 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  Gotham, Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Swift-Neue", Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          12px !default;
+$font-size-large:         16px !default;
+$font-size-small:         10px !default;
+
+$font-size-base-sm: 		$font-size-small !default;
+$font-size-base-lg: 		$font-size-large !default;
+
+$font-size-xxl: 			28px !default;
+$font-size-xl: 				24px !default;
+$font-size-lg: 			  	18px !default;
+$font-size-md:  	      	14px !default; 
+$font-size-sm: 				12px !default; 
+$font-size-xs: 				10px !default; 
+
+$font-size-h1: 				$font-size-xxl !default;
+$font-size-h2: 				$font-size-xl !default;
+$font-size-h3: 				$font-size-lg !default;
+$font-size-h4: 				$font-size-md !default;
+$font-size-h5: 				$font-size-base !default;
+$font-size-h6: 				$font-size-sm !default;
+
+$h1-margin: 				0!default;
+$h2-margin: 				0 0 1em !default;
+$h3-margin: 				1.5em 0 .75em !default;
+$h4-margin: 				1.5em 0 1em !default;
+$h5-margin: 				1em 0 .5em !default;
+$h6-margin: 				1em 0 .5em !default;
+
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.4 !default;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    $font-family-serif !default;
+$headings-font-weight:    400 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+$headings-transform:      normal !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+$font-family-gotham: 			"Gotham" !default;
+$font-family-swift-neue-book:  	"Swift-Neue" !default;
+
+
+$fw-light:  	300 !default;
+$fw-normal: 	400 !default;
+$fw-medium:  	500 !default;
+$fw-bold:  		600 !default;
+$fw-bolder:  		600 !default;
+
+$iconfont-name: 				"iconfont" !default;
+$iconfont-file: 				"iconfont" !default;

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Ajoute les WebParts spécifiques à IFS dans le catalogue" Id="8c4fc669-f3f5-4e87-abdf-e5e912e166e6" Scope="Site" Title="IFS : Deploy WEBPARTS">
+  <ElementManifests>
+    <ElementManifest Location="WP_FundDetails\Elements.xml" />
+    <ElementFile Location="WP_FundDetails\WP_FundDetails.webpart" />
+    <ElementManifest Location="WP_FundsList\Elements.xml" />
+    <ElementFile Location="WP_FundsList\WP_FundsList.webpart" />
+    <ElementManifest Location="WP_Contact\Elements.xml" />
+    <ElementFile Location="WP_Contact\WP_Contact.webpart" />
+  </ElementManifests>
+</Feature>

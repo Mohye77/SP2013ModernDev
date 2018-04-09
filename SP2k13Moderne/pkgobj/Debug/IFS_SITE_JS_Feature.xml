@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Ajoute le JS spécifique à IFS dans la style library" Id="a5dc7fb5-6fc1-4cc2-a958-65c695485775" Scope="Site" Title="IFS : Deploy JS">
+  <ElementManifests>
+    <ElementManifest Location="js\Elements.xml" />
+    <ElementFile Location="js\lib\modernizr.min.js" />
+    <ElementFile Location="js\main.js" />
+    <ElementFile Location="js\main.min.js" />
+    <ElementFile Location="js\jquery.plugins.js" />
+    <ElementFile Location="js\jquery.plugins.min.js" />
+    <ElementFile Location="js\lib\bootstrap.js" />
+    <ElementFile Location="js\lib\bootstrap.min.js" />
+    <ElementFile Location="js\lib\jquery.js" />
+    <ElementFile Location="js\lib\jquery.min.js" />
+    <ElementFile Location="js\lib\browser-polyfill.min.js" />
+    <ElementFile Location="js\lib\browser-polyfill.js" />
+  </ElementManifests>
+</Feature>

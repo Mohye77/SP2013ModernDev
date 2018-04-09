@@ -1,0 +1,177 @@
+/* ===================================================================================
+ * File : global.scss
+ * Description : Generic classes
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */
+
+/* ============================================================= */
+/* TYPOGRAPHY */
+/* ============================================================= */
+/**
+ * Font families
+ ******************************************/
+.gotham 				{ @include ff-gotham; }
+.swift-neue-book 		{ @include ff-swift-neue-book; }
+
+/**
+ * Font sizes
+ ******************************************/
+.font-size-xxl  { font-size: font-size-xxl; }
+.font-size-xl   { font-size: font-size-xl; }
+.font-size-lg   { font-size: font-size-lg; }
+.font-size-md   { font-size: font-size-md; }
+.font-size-base { font-size: font-size-base; }
+.font-size-sm   { font-size: font-size-sm; }
+.font-size-xs   { font-size: font-size-xs; }
+
+
+/**
+ * Titles 
+ ******************************************/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+{
+	text-transform: $headings-transform;
+
+	small
+	{
+		font-size: 60%;
+		display: block;
+		margin: 3px 0 0;
+	}
+}
+
+h1, .h1
+{	
+	color: $brand-primary;
+	margin: $h1-margin;
+}
+
+h2, .h2
+{	
+	margin: $h2-margin;
+}
+
+h3, .h3
+{	
+	margin: $h3-margin;
+}
+
+h4, .h4
+{	
+	margin: $h4-margin;
+}
+
+h5, .h5
+{	
+	margin: $h5-margin;
+}
+
+h6, .h6
+{	
+	margin: $h6-margin;
+}
+
+/**
+ * Text formating
+ ******************************************/
+.lead
+{
+	font-size: $font-size-md;
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		font-size: $font-size-lg;
+	}
+}
+
+.note
+{
+	@include text-italic;
+}
+
+.highlight
+{
+	&, a
+	{
+		color: $brand-primary;
+	}
+}
+
+.mark, mark
+{
+	background: $brand-primary;
+	color: $white;
+	@include padding-v(0);
+}
+
+
+.underlined { @include underlined };
+.no-underlined { @include no-underlined; }
+
+address
+{
+	strong { display: block; }
+}
+
+
+blockquote
+{
+	margin: $spacing 0;
+}
+
+
+
+/* ============================================================= */
+/* MISC */
+/* ============================================================= */
+.disable-selection
+{
+	-moz-user-select: 		'-moz-none';
+	-moz-user-select: 		'none';
+	-o-user-select: 		'none';
+	-khtml-user-select: 	'none';
+	-webkit-user-select: 	'none';
+	-ms-user-select: 		'none';
+	user-select: 			'none';
+}
+
+ 
+
+.js-hidden
+{
+	.js & { display: none; }
+}
+
+
+/* ============================================================= */
+/* LOADER */
+/* ============================================================= */
+.loader
+{
+	margin: 0 auto;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	
+	&:before,
+	&:after
+	{
+		content: '';
+		display: inline-block;
+		animation: bouncer 2.0s infinite ease-in-out;
+		background: $brand-primary;
+		border-radius: 50%;
+		opacity: 0.6;
+		@include pos-abs(0,0,0,0);
+	}
+	
+	&:after
+	{
+		animation-delay: -1.0s;
+	}
+}
+

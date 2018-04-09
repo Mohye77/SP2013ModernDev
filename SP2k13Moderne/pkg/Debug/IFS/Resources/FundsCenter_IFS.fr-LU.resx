@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FundList_ActifNet_Label" xml:space="preserve">
+    <value>Actif net (fonds)</value>
+  </data>
+  <data name="FundList_AnnualisedPerf_Label" xml:space="preserve">
+    <value>Performance annualisée</value>
+  </data>
+  <data name="FundList_ChangeNAV_Label" xml:space="preserve">
+    <value>Evolution de la VNI (Devise)</value>
+  </data>
+  <data name="FundList_DateInception_Label" xml:space="preserve">
+    <value>Depuis création</value>
+  </data>
+  <data name="FundList_Information_Label" xml:space="preserve">
+    <value>Détail</value>
+  </data>
+  <data name="FundList_Isin_Label" xml:space="preserve">
+    <value>Code ISIN</value>
+  </data>
+  <data name="FundList_Name_Label" xml:space="preserve">
+    <value>Nom du Fonds</value>
+  </data>
+  <data name="FundList_NAVDate_Label" xml:space="preserve">
+    <value>Date de valorisation</value>
+  </data>
+  <data name="FundList_Perf1Y_Label" xml:space="preserve">
+    <value>1 an</value>
+  </data>
+  <data name="FundList_Perf3Y_Label" xml:space="preserve">
+    <value>3 ans</value>
+  </data>
+  <data name="FundList_Perf5Y_Label" xml:space="preserve">
+    <value>5 ans</value>
+  </data>
+  <data name="FundList_PerfYTD_Label" xml:space="preserve">
+    <value>YTD</value>
+  </data>
+  <data name="FundList_Perf_Label" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="FundList_QuickAccess_Label" xml:space="preserve">
+    <value>Accès rapide</value>
+  </data>
+  <data name="FundList_ShareType_Label" xml:space="preserve">
+    <value>Part du Fonds</value>
+  </data>
+  <data name="FundList_Volatility3Y_Label" xml:space="preserve">
+    <value>Volatilité 3 ans</value>
+  </data>
+  <data name="FundDetails_Perf1Y_Label" xml:space="preserve">
+    <value>1 an</value>
+  </data>
+  <data name="FundDetails_Perf3Y_Label" xml:space="preserve">
+    <value>3 ans</value>
+  </data>
+  <data name="FundDetails_Perf5Y_Label" xml:space="preserve">
+    <value>5 ans</value>
+  </data>
+  <data name="FundDetails_AnnualisedPerf_Label" xml:space="preserve">
+    <value>Performance annualisée</value>
+  </data>
+  <data name="FundDetails_CumulativePerf_Label" xml:space="preserve">
+    <value>Performance cumulée</value>
+  </data>
+  <data name="FundDetails_DateInception_Label" xml:space="preserve">
+    <value>Depuis création</value>
+  </data>
+  <data name="FundDetails_PerfOfPart_Label" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="FundDetails_Perf_Label" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="FundDetails_Since_Label" xml:space="preserve">
+    <value>Depuis</value>
+  </data>
+  <data name="FundDetails_AuMFund_Label" xml:space="preserve">
+    <value>Actif net (Fonds)</value>
+  </data>
+  <data name="FundDetails_CreationDatePart_Label" xml:space="preserve">
+    <value>Date de Création (Part)</value>
+  </data>
+  <data name="FundDetails_CreationDate_Label" xml:space="preserve">
+    <value>Date de Création (Fonds)</value>
+  </data>
+  <data name="FundDetails_CurrencyFund_Label" xml:space="preserve">
+    <value>Devise de référence (Fonds)</value>
+  </data>
+  <data name="FundDetails_CurrencyShareClass_Label" xml:space="preserve">
+    <value>Devise (Part)</value>
+  </data>
+  <data name="FundDetails_DistributionPolicy_Label" xml:space="preserve">
+    <value>Affectation des résultats</value>
+  </data>
+  <data name="FundDetails_EURegulation_Label" xml:space="preserve">
+    <value>EU Regulation</value>
+  </data>
+  <data name="FundDetails_FundInformation_Label" xml:space="preserve">
+    <value>Caractéristiques</value>
+  </data>
+  <data name="FundDetails_Incorporation_Label" xml:space="preserve">
+    <value>Pays de domiciliation</value>
+  </data>
+  <data name="FundDetails_IsinCode_Label" xml:space="preserve">
+    <value>Code ISIN</value>
+  </data>
+  <data name="FundDetails_LegalForm_Label" xml:space="preserve">
+    <value>Forme juridique</value>
+  </data>
+  <data name="FundDetails_ManagementCompany_Label" xml:space="preserve">
+    <value>Société de gestion</value>
+  </data>
+  <data name="FundDetails_Managers_Label" xml:space="preserve">
+    <value>Gérant(s)</value>
+  </data>
+  <data name="FundDetails_MinimumInvestment_Label" xml:space="preserve">
+    <value>Investissement initial minimum</value>
+  </data>
+  <data name="FundDetails_RegulationAuthority_Label" xml:space="preserve">
+    <value>Organisme de tutelle</value>
+  </data>
+  <data name="FundDetails_ValuationFrequency_Label" xml:space="preserve">
+    <value>Fréquence de valorisation</value>
+  </data>
+  <data name="FundDetails_CurManagementFee_Label" xml:space="preserve">
+    <value>Frais de gestion appliqués</value>
+  </data>
+  <data name="FundDetails_DelegatedManagementCompany_Label" xml:space="preserve">
+    <value>Société de gestion déléguée</value>
+  </data>
+  <data name="FundDetails_MaxManagementFee_Label" xml:space="preserve">
+    <value>Frais de gestion maximum</value>
+  </data>
+  <data name="FundDetails_PEA_Label" xml:space="preserve">
+    <value>Eligible PEA</value>
+  </data>
+  <data name="FundDetails_PerformanceFee_Label" xml:space="preserve">
+    <value>Commission de surperformance</value>
+  </data>
+  <data name="FundDetails_RedemptionFee_Label" xml:space="preserve">
+    <value>Commission de rachat</value>
+  </data>
+  <data name="FundDetails_RepresentativeAgent_Label" xml:space="preserve">
+    <value>Représentant</value>
+  </data>
+  <data name="FundDetails_SubscriptionConditions_Label" xml:space="preserve">
+    <value>Conditions de souscription et de rachat</value>
+  </data>
+  <data name="FundDetails_SubscriptionFee_Label" xml:space="preserve">
+    <value>Commission de souscription</value>
+  </data>
+  <data name="FundDetails_No_Label" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="FundDetails_Yes_Label" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="FundDetails_PayingAgent_Label" xml:space="preserve">
+    <value>Service de paiement</value>
+  </data>
+  <data name="FundDetails_Index_Label" xml:space="preserve">
+    <value>Indice de référence</value>
+  </data>
+  <data name="FundDetails_MarketIndex_Label" xml:space="preserve">
+    <value>Indice de marché</value>
+  </data>
+  <data name="FundDetails_ZeroPercentageMax_Label" xml:space="preserve">
+    <value>Néant</value>
+  </data>
+  <data name="FundDetails_Documentation_Label" xml:space="preserve">
+    <value>Documentation téléchargeable</value>
+  </data>
+  <data name="Chart_Month_April" xml:space="preserve">
+    <value>Avril</value>
+  </data>
+  <data name="Chart_Month_August" xml:space="preserve">
+    <value>Août</value>
+  </data>
+  <data name="Chart_Month_December" xml:space="preserve">
+    <value>Décembre</value>
+  </data>
+  <data name="Chart_Month_February" xml:space="preserve">
+    <value>Février</value>
+  </data>
+  <data name="Chart_Month_January" xml:space="preserve">
+    <value>Janvier</value>
+  </data>
+  <data name="Chart_Month_July" xml:space="preserve">
+    <value>Juillet</value>
+  </data>
+  <data name="Chart_Month_June" xml:space="preserve">
+    <value>Juin</value>
+  </data>
+  <data name="Chart_Month_March" xml:space="preserve">
+    <value>Mars</value>
+  </data>
+  <data name="Chart_Month_May" xml:space="preserve">
+    <value>Mai</value>
+  </data>
+  <data name="Chart_Month_November" xml:space="preserve">
+    <value>Novembre</value>
+  </data>
+  <data name="Chart_Month_October" xml:space="preserve">
+    <value>Octobre</value>
+  </data>
+  <data name="Chart_Month_September" xml:space="preserve">
+    <value>Septembre</value>
+  </data>
+  <data name="Chart_ShortMonth_April" xml:space="preserve">
+    <value>Avr</value>
+  </data>
+  <data name="Chart_ShortMonth_August" xml:space="preserve">
+    <value>Août</value>
+  </data>
+  <data name="Chart_ShortMonth_December" xml:space="preserve">
+    <value>Déc</value>
+  </data>
+  <data name="Chart_ShortMonth_February" xml:space="preserve">
+    <value>Fév</value>
+  </data>
+  <data name="Chart_ShortMonth_January" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="Chart_ShortMonth_July" xml:space="preserve">
+    <value>Juil</value>
+  </data>
+  <data name="Chart_ShortMonth_June" xml:space="preserve">
+    <value>Juin</value>
+  </data>
+  <data name="Chart_ShortMonth_March" xml:space="preserve">
+    <value>Mars</value>
+  </data>
+  <data name="Chart_ShortMonth_May" xml:space="preserve">
+    <value>Mai</value>
+  </data>
+  <data name="Chart_ShortMonth_November" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="Chart_ShortMonth_October" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="Chart_ShortMonth_September" xml:space="preserve">
+    <value>Sept</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Friday" xml:space="preserve">
+    <value>Ven</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Monday" xml:space="preserve">
+    <value>Lun</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Saturday" xml:space="preserve">
+    <value>Sam</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Sunday" xml:space="preserve">
+    <value>Dim</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Thursday" xml:space="preserve">
+    <value>Jeu</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Tuesday" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="Chart_ShortWeekDay_Wednesday" xml:space="preserve">
+    <value>Mer</value>
+  </data>
+  <data name="Chart_WeekDay_Friday" xml:space="preserve">
+    <value>Vendredi</value>
+  </data>
+  <data name="Chart_WeekDay_Monday" xml:space="preserve">
+    <value>Lundi</value>
+  </data>
+  <data name="Chart_WeekDay_Saturday" xml:space="preserve">
+    <value>Samedi</value>
+  </data>
+  <data name="Chart_WeekDay_Sunday" xml:space="preserve">
+    <value>Dimanche</value>
+  </data>
+  <data name="Chart_WeekDay_Thursday" xml:space="preserve">
+    <value>Jeudi</value>
+  </data>
+  <data name="Chart_WeekDay_Tuesday" xml:space="preserve">
+    <value>Mardi</value>
+  </data>
+  <data name="Chart_WeekDay_Wednesday" xml:space="preserve">
+    <value>Mercredi</value>
+  </data>
+  <data name="Generic_Fonds" xml:space="preserve">
+    <value>Fonds</value>
+  </data>
+  <data name="Generic_Indice" xml:space="preserve">
+    <value>Indice</value>
+  </data>
+  <data name="Generic_Pro_0" xml:space="preserve">
+    <value>Non-Professionnel</value>
+  </data>
+  <data name="Generic_Pro_1" xml:space="preserve">
+    <value>Professionnel</value>
+  </data>
+  <data name="FundList_Details_Label" xml:space="preserve">
+    <value>Détails</value>
+  </data>
+  <data name="FundList_FiltresActives_Label" xml:space="preserve">
+    <value>filtre(s) activé(s)</value>
+  </data>
+  <data name="FundList_FondsAffichesSur_Label" xml:space="preserve">
+    <value>Fonds affichés sur</value>
+  </data>
+  <data name="FundList_RechercheParNomIsin_Placeholder" xml:space="preserve">
+    <value>Rechercher par nom ou code ISIN</value>
+  </data>
+  <data name="FundList_Reinitialiser_Label" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="FundList_Devise_Label" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="FundList_Filtre_Label" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="FundList_Funds_Label" xml:space="preserve">
+    <value>Fonds</value>
+  </data>
+  <data name="FundList_Caracteristiques_Label" xml:space="preserve">
+    <value>Caractéristiques</value>
+  </data>
+  <data name="FundList_Documentation_Label" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="FundList_EvolutionVL_Label" xml:space="preserve">
+    <value>Evolution VL</value>
+  </data>
+  <data name="FundList_Performance_Label" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="ShortCutTopLinks_Modifier_Label" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="ShortCutTopLinks_Pays_Label" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="ShortCutTopLinks_Profil_Label" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="ShortCutTopLinks_VotreProfil_Label" xml:space="preserve">
+    <value>Votre profil</value>
+  </data>
+  <data name="FundDetails_RetourListDesFonds_Label" xml:space="preserve">
+    <value>Retour à la liste des fonds</value>
+  </data>
+  <data name="FundDetails_ExternalLink_Message" xml:space="preserve">
+    <value>Attention, ce lien redirige vers un autre site</value>
+  </data>
+  <data name="FundDetails_SocGestLien_Label" xml:space="preserve">
+    <value>Accéder au site</value>
+  </data>
+  <data name="FundDetails_EvolutionVNI_Label" xml:space="preserve">
+    <value>Evolution de la VNI</value>
+  </data>
+  <data name="FundDetails_Contact_Label" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="FundDetails_EvolutionVL_Label" xml:space="preserve">
+    <value>Evolution de la Valeur Liquidative</value>
+  </data>
+  <data name="FundDetails_GraphiqueBase100_Label" xml:space="preserve">
+    <value>Graphique base 100 au</value>
+  </data>
+  <data name="FundDetails_PerformanceAnnuelle_Label" xml:space="preserve">
+    <value>Performance annuelle</value>
+  </data>
+  <data name="FundDetails_Telecharger_Label" xml:space="preserve">
+    <value>Télécharger</value>
+  </data>
+  <data name="FundDetails_ToutSelectionner_Label" xml:space="preserve">
+    <value>Tout sélectionner</value>
+  </data>
+  <data name="Document_Archive_FileName" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="FundDetails_VLDate_CSVFile_Header" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="FundDetails_VLValue_CSVFile_Header" xml:space="preserve">
+    <value>VL</value>
+  </data>
+  <data name="Generic_Pro_NOPRO" xml:space="preserve">
+    <value>Non-Professionnel</value>
+  </data>
+  <data name="Generic_Pro_PRO" xml:space="preserve">
+    <value>Professionnel</value>
+  </data>
+  <data name="FundDetails_ConditionSubscriptionPurchase_Label" xml:space="preserve">
+    <value>Conditions de souscription et de rachat</value>
+  </data>
+  <data name="Disclaimer_Annuler_Label" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Disclaimer_Bienvenue_Label" xml:space="preserve">
+    <value>Bienvenue</value>
+  </data>
+  <data name="Disclaimer_Introduction_Label" xml:space="preserve">
+    <value>Ce site propose une information complète sur les gammes de fonds du Groupe Edmond de Rothschild. Il offre notamment un accès simplifié aux principales données relatives aux fonds (performances, valeurs liquidatives, caractéristiques) et à leurs documents commerciaux ou légaux.</value>
+  </data>
+  <data name="Disclaimer_SelectionnerPays_Label" xml:space="preserve">
+    <value>Sélectionner un pays</value>
+  </data>
+  <data name="Disclaimer_SelectionnerProfil_Label" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Disclaimer_Valider_Label" xml:space="preserve">
+    <value>J'accepte</value>
+  </data>
+  <data name="Disclaimer_VeuillezRenseigner_Label" xml:space="preserve">
+    <value>Veuillez renseigner votre pays et indiquer à quelle catégorie d'investisseur vous appartenez :</value>
+  </data>
+  <data name="Contact_Contact_Label" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Contact_Adresse_Label" xml:space="preserve">
+    <value>Numéro + rue</value>
+  </data>
+  <data name="Contact_CodePostal_Label" xml:space="preserve">
+    <value>Code postal</value>
+  </data>
+  <data name="Contact_Email_Label" xml:space="preserve">
+    <value>Email*</value>
+  </data>
+  <data name="Contact_Envoyer_Label" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="Contact_Message_Label" xml:space="preserve">
+    <value>Message*</value>
+  </data>
+  <data name="Contact_Nom_Label" xml:space="preserve">
+    <value>Nom*</value>
+  </data>
+  <data name="Contact_Pays_Label" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="Contact_Prenom_Label" xml:space="preserve">
+    <value>Prénom*</value>
+  </data>
+  <data name="Contact_RetourListDesFonds_Label" xml:space="preserve">
+    <value>Retour à la liste des fonds</value>
+  </data>
+  <data name="Contact_Telephone_Label" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="Contact_Ville_Label" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="Contact_Coordonnees_Label" xml:space="preserve">
+    <value>Coordonnées</value>
+  </data>
+  <data name="Contact_MessageIntro_Label" xml:space="preserve">
+    <value>Message que vous souhaitez nous envoyer :</value>
+  </data>
+  <data name="Generic_Country_AT" xml:space="preserve">
+    <value>Autriche</value>
+  </data>
+  <data name="Generic_Country_BE" xml:space="preserve">
+    <value>Belgique</value>
+  </data>
+  <data name="Generic_Country_CH" xml:space="preserve">
+    <value>Suisse</value>
+  </data>
+  <data name="Generic_Country_DE" xml:space="preserve">
+    <value>Allemagne</value>
+  </data>
+  <data name="Generic_Country_ES" xml:space="preserve">
+    <value>Espagne</value>
+  </data>
+  <data name="Generic_Country_FI" xml:space="preserve">
+    <value>Finlande</value>
+  </data>
+  <data name="Generic_Country_FR" xml:space="preserve">
+    <value>France</value>
+  </data>
+  <data name="Generic_Country_GB" xml:space="preserve">
+    <value>UK</value>
+  </data>
+  <data name="Generic_Country_IE" xml:space="preserve">
+    <value>Irlande</value>
+  </data>
+  <data name="Generic_Country_IT" xml:space="preserve">
+    <value>Italie</value>
+  </data>
+  <data name="Generic_Country_LU" xml:space="preserve">
+    <value>Luxembourg</value>
+  </data>
+  <data name="Generic_Country_NL" xml:space="preserve">
+    <value>Pays-Bas</value>
+  </data>
+  <data name="Generic_Country_OT" xml:space="preserve">
+    <value>Autres</value>
+  </data>
+  <data name="Generic_Country_PT" xml:space="preserve">
+    <value>Portugal</value>
+  </data>
+  <data name="Generic_Country_SE" xml:space="preserve">
+    <value>Suède</value>
+  </data>
+  <data name="Disclaimer_Profil_Label" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="FundList_Valider_Label" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="Generic_SiteTitle" xml:space="preserve">
+    <value>Fund Center</value>
+  </data>
+  <data name="Contact_ErrorMsg_Label" xml:space="preserve">
+    <value>Une erreur est survenue lors de l'envoi du message</value>
+  </data>
+  <data name="Contact_SuccessMsg_Label" xml:space="preserve">
+    <value>Votre message a bien été envoyé</value>
+  </data>
+  <data name="Contact_ErrorValidationMsg_Label" xml:space="preserve">
+    <value>Des informations sont manquantes, votre message ne peut être envoyé</value>
+  </data>
+  <data name="FundList_NoData_Label" xml:space="preserve">
+    <value>Pas de fonds disponibles</value>
+  </data>
+</root>

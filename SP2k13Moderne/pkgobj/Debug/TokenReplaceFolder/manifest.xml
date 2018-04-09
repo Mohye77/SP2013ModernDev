@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3dc48ff3-d246-487e-a3ba-8174c8892e68" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="IFS_Core.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="IFS.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="IFS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4bb36518cdb605fa" Namespace="IFS.WebParts" TypeName="*" />
+        <SafeControl Assembly="IFS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4bb36518cdb605fa" Namespace="IFS.WebParts" TypeName="*" />
+        <SafeControl Assembly="IFS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4bb36518cdb605fa" Namespace="IFS.WebParts" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="Resources\FundsCenter_IFS.resx" />
+    <RootFile Location="Resources\FundsCenter_IFS.en.resx" />
+    <RootFile Location="Resources\FundsCenter_IFS.en-US.resx" />
+    <RootFile Location="Resources\FundsCenter_IFS.fr.resx" />
+    <RootFile Location="Resources\FundsCenter_IFS.fr-FR.resx" />
+    <RootFile Location="Resources\FundsCenter_IFS.fr-LU.resx" />
+    <RootFile Location="Resources\FundsCenter_IFS.en-GB.resx" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_Contact.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_CookiesMessage.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_Disclaimer.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_FundDetails.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_FundsList.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_JSTemplate.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_MainFooter.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_ServerVariables.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\IFS\UC_ShortcutTopLinks.ascx" />
+    <TemplateFile Location="Layouts\IFS\DownloadDocs.ashx" />
+    <TemplateFile Location="Layouts\IFS\ExportVLCSV.ashx" />
+    <TemplateFile Location="Layouts\IFS\GetChartData.ashx" />
+    <TemplateFile Location="Layouts\IFS\GetDetails.ashx" />
+    <TemplateFile Location="Layouts\IFS\GetDocuments.ashx" />
+    <TemplateFile Location="Layouts\IFS\GetDisclaimerText.ashx" />
+    <TemplateFile Location="Layouts\IFS\ValidDisclaimer.ashx" />
+    <TemplateFile Location="Layouts\IFS\GetAvailableDisclaimerMarkets.ashx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="IFS_SITE_IMAGES\Feature.xml" />
+    <FeatureManifest Location="IFS_SITE_CSS\Feature.xml" />
+    <FeatureManifest Location="IFS_SITE_FONTS\Feature.xml" />
+    <FeatureManifest Location="IFS_SITE_LAYOUTS\Feature.xml" />
+    <FeatureManifest Location="IFS_SITE_JS\Feature.xml" />
+    <FeatureManifest Location="IFS_SITE_WEBPARTS\Feature.xml" />
+    <FeatureManifest Location="IFS_WEB_DELEGATECONTROLS\Feature.xml" />
+  </FeatureManifests>
+</Solution>

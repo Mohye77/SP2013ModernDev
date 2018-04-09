@@ -1,0 +1,61 @@
+/* =================================================================================== 
+ * File : typeahead.scss
+ * Description : Typeahead plugin styles
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+$typeahead-menu-bg:  				#8a9cb0 !default;
+$typeahead-suggestion-padding:  	10px 15px !default;
+$typeahead-suggestion-bg:  			#8a9cb0 !default;
+$typeahead-suggestion-even-bg:  	#7f93ab !default;
+$typeahead-cursor-bg:  				darken($typeahead-suggestion-even-bg, 5%) !default;
+
+.twitter-typeahead
+{
+	display: block !important;
+
+	.tt-menu
+	{
+		background: $typeahead-menu-bg;
+		color: $white;
+		font-size: $font-size-base;
+		right: 0;
+	}
+
+	.tt-dataset
+	{
+
+	}
+
+	.tt-suggestion
+	{
+		background: $typeahead-suggestion-bg;
+		padding: $typeahead-suggestion-padding;
+
+		&:nth-child(even)
+		{
+			background: $typeahead-suggestion-even-bg;
+		}
+	}
+
+	.tt-selectable
+	{
+		cursor: pointer;
+
+		&:hover
+		{
+			background: $typeahead-cursor-bg;
+		}
+	}
+
+	.tt-highlight
+	{
+		
+	}
+	
+	.tt-cursor
+	{
+		&, &:nth-child(even) { background: $typeahead-cursor-bg; }
+		
+	}
+}

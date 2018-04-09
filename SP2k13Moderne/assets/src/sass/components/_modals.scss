@@ -1,0 +1,59 @@
+/* =================================================================================== 
+ * File : modals.scss
+ * Description : Bootstrap's modals extension
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* MODAL */
+/* ============================================================= */
+.modal-open,
+.modal { padding-right: 0 !important; }
+
+.modal
+{
+	.modal-dialog
+	{
+		max-width: $modal-lg;
+		width: auto;
+		z-index: $zindex-modal-dialog;
+		padding: 0 $spacing-xs;
+	}
+
+	.modal-content
+	{
+		border-radius: $modal-border-radius;
+		box-shadow: $modal-box-shadow;
+		border: 0;
+	}
+
+	.modal-header,
+	.modal-footer
+	{
+		//border: 0;
+		//margin: 0;
+	}
+
+	.modal-header
+	{
+		.close
+		{
+			background: $brand-primary;
+			color: $white;
+			@include pos-abs($top: 0, $right: 0);
+			padding: $spacing-xs;
+		}
+	}
+
+	.modal-title
+	{
+		padding-right: $spacing-md;
+	}
+
+
+	.modal-footer
+	{
+		.btn { min-width: 0; }
+	}
+}

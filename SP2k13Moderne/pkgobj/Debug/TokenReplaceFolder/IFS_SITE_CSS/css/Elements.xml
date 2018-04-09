@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="css" Path="css" Url="Style Library/IFS/css" RootWebOnly="TRUE">
+    <File Path="compile.css" Url="compile.css" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="compile.min.css" Url="compile.min.css" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

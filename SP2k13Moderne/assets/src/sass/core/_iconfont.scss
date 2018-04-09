@@ -1,0 +1,141 @@
+@mixin make-icon
+{
+	font-size: $icon-size;
+	font-family: 'iconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before
+{
+	@include make-icon;
+}
+
+
+i.icon,
+i[class^="icon-"],
+i[class*=" icon-"]
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+@mixin icon-arrow-down { content: "\EA01"; }
+
+.icon-arrow-down:before { @include icon-arrow-down; }
+
+@mixin icon-arrow-left { content: "\EA02"; }
+
+.icon-arrow-left:before { @include icon-arrow-left; }
+
+@mixin icon-arrow-right { content: "\EA03"; }
+
+.icon-arrow-right:before { @include icon-arrow-right; }
+
+@mixin icon-arrow-up { content: "\EA04"; }
+
+.icon-arrow-up:before { @include icon-arrow-up; }
+
+@mixin icon-bar-chart { content: "\EA05"; }
+
+.icon-bar-chart:before { @include icon-bar-chart; }
+
+@mixin icon-chat-bubble { content: "\EA06"; }
+
+.icon-chat-bubble:before { @include icon-chat-bubble; }
+
+@mixin icon-cross-circle { content: "\EA07"; }
+
+.icon-cross-circle:before { @include icon-cross-circle; }
+
+@mixin icon-cross { content: "\EA08"; }
+
+.icon-cross:before { @include icon-cross; }
+
+@mixin icon-download { content: "\EA09"; }
+
+.icon-download:before { @include icon-download; }
+
+@mixin icon-excel-file { content: "\EA0A"; }
+
+.icon-excel-file:before { @include icon-excel-file; }
+
+@mixin icon-filter { content: "\EA0B"; }
+
+.icon-filter:before { @include icon-filter; }
+
+@mixin icon-folder { content: "\EA0C"; }
+
+.icon-folder:before { @include icon-folder; }
+
+@mixin icon-info { content: "\EA0D"; }
+
+.icon-info:before { @include icon-info; }
+
+@mixin icon-line-chart { content: "\EA0E"; }
+
+.icon-line-chart:before { @include icon-line-chart; }
+
+@mixin icon-list { content: "\EA0F"; }
+
+.icon-list:before { @include icon-list; }
+
+@mixin icon-mail { content: "\EA10"; }
+
+.icon-mail:before { @include icon-mail; }
+
+@mixin icon-menu { content: "\EA11"; }
+
+.icon-menu:before { @include icon-menu; }
+
+@mixin icon-more { content: "\EA12"; }
+
+.icon-more:before { @include icon-more; }
+
+@mixin icon-new-window { content: "\EA13"; }
+
+.icon-new-window:before { @include icon-new-window; }
+
+@mixin icon-pdf { content: "\EA14"; }
+
+.icon-pdf:before { @include icon-pdf; }
+
+@mixin icon-performance { content: "\EA15"; }
+
+.icon-performance:before { @include icon-performance; }
+
+@mixin icon-search { content: "\EA16"; }
+
+.icon-search:before { @include icon-search; }
+
+@mixin icon-settings-filled { content: "\EA17"; }
+
+.icon-settings-filled:before { @include icon-settings-filled; }
+
+@mixin icon-settings { content: "\EA18"; }
+
+.icon-settings:before { @include icon-settings; }
+
+@mixin icon-tick { content: "\EA19"; }
+
+.icon-tick:before { @include icon-tick; }
+
+@mixin icon-user-circle { content: "\EA1A"; }
+
+.icon-user-circle:before { @include icon-user-circle; }
+
+@mixin icon-warning { content: "\EA1B"; }
+
+.icon-warning:before { @include icon-warning; }

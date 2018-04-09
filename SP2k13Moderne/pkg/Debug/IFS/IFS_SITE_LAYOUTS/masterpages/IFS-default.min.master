@@ -1,0 +1,220 @@
+﻿<%@ Master Language="C#" %>
+
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Publishing" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssucmui" TagName="MUISelector" Src="~/_controltemplates/15/MUISelector.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="SearchWC" Namespace="Microsoft.Office.Server.Search.WebControls" Assembly="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="PublishingRibbon" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx" %>
+
+
+<!DOCTYPE HTML>
+<SharePoint:SPHtmlTag runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;" class="no-js">
+    <head runat="server">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=10">
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <%--===== Meta index follow ==============================================================================--%>
+        <asp:ContentPlaceHolder runat="server" ID="PlaceHolderRobots"></asp:ContentPlaceHolder>
+        <%--===== Meta for check the disponibility ==============================================================================--%>
+        <meta name="ID" content="HEALTHGO" />
+        <%--===== Référencement Bing ========================================================================================--%>
+        <meta name="msvalidate.01" content="7CB29374F49B715B642D9551640E7963" />
+        <%--===== Page Title loaded from page or page layout ====================================================================--%>
+        <SharePoint:PageTitle runat="server"><asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"></asp:ContentPlaceHolder></SharePoint:PageTitle>
+        
+		<%--===== Favicon / Windows Tile ========================================================================================--%>
+        <link rel="icon" type="image/x-icon" href="/style%20library/ifs/images/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/style%20library/ifs/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/style%20library/ifs/images/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/style%20library/ifs/images/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/style%20library/ifs/images/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/style%20library/ifs/images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/style%20library/ifs/images/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/style%20library/ifs/images/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/style%20library/ifs/images/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/style%20library/ifs/images/favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/style%20library/ifs/images/favicon/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/style%20library/ifs/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/style%20library/ifs/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/style%20library/ifs/images/favicon/favicon-192x192.png">
+		<link rel="android-touch-icon" href="/style%20library/ifs/images/favicon/apple-touch-icon-180x180.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/style%20library/ifs/images/favicon/ms-icon-144x144.png">
+        <SharePoint:SPPinnedSiteTile ID="SPPinnedSiteTile1" runat="server" TileUrl="/style%20library/ifs/images/favicon/ms-icon-144x144.png" TileColor="#ffffff" />
+
+        <%--===== Canonical ====================================================================================--%>
+        <asp:ContentPlaceHolder ID="PlaceHolderCanonical" runat="server"></asp:ContentPlaceHolder>
+
+
+        <%--===== SP Scripts and CSS  ===========================================================================================--%>
+        <SharePoint:StartScript ID="StartScript1" runat="server" />
+        <SharePoint:CssLink ID="CssLink1" runat="server" Version="15" />
+        <SharePoint:CacheManifestLink ID="CacheManifestLink1" runat="server" />
+        <SharePoint:PageRenderMode ID="PageRenderMode1" runat="server" RenderModeType="MinimalDownload" />
+        <SharePoint:ScriptLink ID="ScriptLink1" Language="javascript" Name="core.js" OnDemand="true" runat="server" Localizable="false" />
+        <SharePoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedControl1" runat="server" AuthenticationRestrictions="AuthenticatedUsersOnly">
+            <SharePoint:ScriptLink ID="ScriptLink2" Language="javascript" Name="menu.js" OnDemand="true" runat="server" Localizable="false" />
+            <SharePoint:ScriptLink ID="ScriptLink3" Language="javascript" Name="callout.js" OnDemand="true" runat="server" Localizable="false" />
+            <SharePoint:ScriptLink ID="ScriptLink4" Language="javascript" Name="sharing.js" OnDemand="true" runat="server" Localizable="false" />
+            <SharePoint:ScriptLink ID="ScriptLink5" Language="javascript" Name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
+            <SharePoint:CustomJSUrl ID="CustomJSUrl1" runat="server" />
+            <SharePoint:SoapDiscoveryLink ID="SoapDiscoveryLink1" runat="server" />
+        </SharePoint:SPSecurityTrimmedControl>
+
+        <%--===== Core SharePoint CSS ===========================================================================================--%>
+        <SharePoint:CssRegistration ID="corev15" Name="Themable/corev15.css" runat="server" />
+
+
+		<%--===== Custom CSS / JS ===========================================================================================--%>
+		<link href="/style%20library/ifs/css/compile.min.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="/style%20library/ifs/js/lib/modernizr.min.js"></script>
+
+        <%--===== Additional header placeholder - overridden by asp:content on pages or page layouts  ===========================--%>
+        <SharePoint:AjaxDelta ID="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            <asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server" />
+            <SharePoint:DelegateControl ID="DelegateControl1" runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true" />
+
+            <%--========================================= Canonical ========================================= --%>
+            <SharePoint:DelegateControl ID="CanonicalDelegateControl" ControlId="RegisterCanonical" runat="server"></SharePoint:DelegateControl>
+
+        </SharePoint:AjaxDelta>
+    </head>
+    <body>
+
+        <%--===== SP IDs / Prefetch SP images / SP Form  ===========================================================================--%>
+        <SharePoint:SPClientIDGenerator ID="SPClientIDGenerator1" runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" />
+        <SharePoint:ImageLink ID="ImageLink1" runat="server" />
+        <SharePoint:SharePointForm ID="SharePointForm1" onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server" class="spGlobalForm">
+
+            <%--===== SharePoint Reqs this for adding columns =====================================================--%>
+            <script type="text/javascript"> var submitHook = function () { return false; }; try { theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; } catch (e) { } </script>
+
+            <%--===== Web Part Manager  =============================================================================================--%>
+            <SharePoint:AjaxDelta ID="DeltaSPWebPartManager" runat="server">
+                <WebPartPages:SPWebPartManager ID="SPWebPartManager1" runat="server" />
+            </SharePoint:AjaxDelta>
+
+            <%--===== ScriptManager =====================================================--%>
+            <asp:ScriptManager ID="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+
+            <%--===== Ribbon Code Starts Here  ======================================================================================--%>
+
+                <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AuthenticatedUsersOnly">
+                  <PublishingRibbon:PublishingRibbon runat="server" />
+                </SharePoint:SPSecurityTrimmedControl>
+                <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
+                    <div id="s4-ribbonrow" class="s4-ribbonrowhidetitle" style="display: none;"></div>
+                </SharePoint:SPSecurityTrimmedControl>
+            
+            <%--===== Ribbon Code Ends Here  ========================================================================================--%>
+
+            <%--===== Main Scrolling Body Starts Here ===============================================================================--%>
+            <div id="s4-workspace" class="s4-workspace">
+                <div id="s4-bodyContainer" class="s4-bodyContainer">
+                    <%--===== SharePoint looks for this div ID s4-titlerow for the "Focus on Content" Button ========================--%>
+                    <div id="s4-titlerow" class="ms-dialogHidden s4-titlerow">
+                    </div>
+                    <%--===== Main Content ========================================================================================== --%>
+                    <div id="contentBox" class="contentBox">
+                        <%--===== Title ======================================================================================= --%>
+                        <!--<asp:ContentPlaceHolder ID="PlaceHolderCustomPageTitle" runat="server">
+                            <h1 id="pageTitle" class="ms-core-pageTitle">
+                                <%--===== SP Reqs DeltaPlaceHolderPageTitleInTitleArea and PlaceHolderPageTitleInTitleArea for adding Apps in Site Content =================== --%>
+                                <SharePoint:AjaxDelta ID="DeltaPlaceHolderPageTitleInTitleArea" runat="server">
+                                    <asp:ContentPlaceHolder ID="PlaceHolderPageTitleInTitleArea" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </SharePoint:AjaxDelta>
+                                <SharePoint:AjaxDelta BlockElement="true" ID="DeltaPlaceHolderPageDescription" CssClass="ms-displayInlineBlock ms-normalWrap" runat="server">
+                                    <a href="javascript:;" id="ms-pageDescriptionDiv" style="display: none;">
+                                        <span id="ms-pageDescriptionImage">&#160;</span>
+                                    </a>
+                                    <span class="ms-accessible" id="ms-pageDescription">
+                                        <asp:ContentPlaceHolder ID="PlaceHolderPageDescription" runat="server" />
+                                    </span>
+                                    <SharePoint:ScriptBlock ID="ScriptBlock1" runat="server">
+                                        _spBodyOnLoadFunctionNames.push("setupPageDescriptionCallout");
+                                    </SharePoint:ScriptBlock>
+                                </SharePoint:AjaxDelta>
+                            </h1>
+                        </asp:ContentPlaceHolder>-->
+
+
+                        <%--===== Site content ================================================================================= --%>
+                        <div id="master">
+
+							<SharePoint:DelegateControl ID="ShortcutTopDelegate" ControlId="ShortcutTopDelegateUserControl" runat="server"></SharePoint:DelegateControl>
+
+    
+							<%--===== Main Placeholder gets replaced with content of the page ======================================= --%>
+                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+
+                        </div>
+						<%--===== Site content ================================================================================= --%>
+                        <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" BlockElement="true" runat="server">
+                            
+							
+
+
+                        </SharePoint:AjaxDelta>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+            <%--===== Main Scrolling Body Ends Here ================================================================================= --%>
+
+            <%--===== Needed for form stuff ========================================================================================= --%>
+            <SharePoint:AjaxDelta ID="DeltaFormDigest" BlockElement="true" runat="server">
+                <asp:ContentPlaceHolder ID="PlaceHolderFormDigest" runat="server">
+                    <SharePoint:FormDigest ID="Formdigest1" runat="server" />
+                </asp:ContentPlaceHolder>
+            </SharePoint:AjaxDelta>
+
+            <%--===== Hidden Placeholders =========================================================================================== --%>
+            <asp:ContentPlaceHolder ID="PlaceHolderBodyAreaClass" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaClass" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderGlobalNavigation" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderHorizontalNav" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderSiteName" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderPageImage" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderTitleLeftBorder" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderMiniConsole" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderTitleRightMargin" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderNavSpacer" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderBodyLeftBorder" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderBodyRightMargin" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="WSSDesignConsole" Visible="False" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderTitleBreadcrumb" runat="server" />
+            <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" runat="server" Visible="False" />
+            <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchTop" runat="server" Visible="False" />
+            <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" runat="server" Visible="False" />
+            <asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" runat="server" Visible="False" />
+            <asp:ContentPlaceHolder ID="PlaceHolderLeftActions" runat="server" Visible="False" />
+        </SharePoint:SharePointForm>
+
+        <%--===== Adds extra stuff like another form for Survey management ====================================================== --%>
+        <SharePoint:AjaxDelta ID="DeltaPlaceHolderUtilityContent" runat="server">
+            <asp:ContentPlaceHolder ID="PlaceHolderUtilityContent" runat="server" />
+        </SharePoint:AjaxDelta>
+
+		<%--===== JS files ===========================================================================================--%>
+		<script type="text/javascript" src="/style%20library/ifs/js/lib/browser-polyfill.min.js"></script>
+		<script type="text/javascript" src="/style%20library/ifs/js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="/style%20library/ifs/js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/style%20library/ifs/js/jquery.plugins.min.js"></script>
+		<script type="text/javascript" src="/style%20library/ifs/js/main.min.js"></script>
+    </body>
+
+</SharePoint:SPHtmlTag>

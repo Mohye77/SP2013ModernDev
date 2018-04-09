@@ -1,0 +1,51 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+
+//== Pagination
+//
+//##
+
+$pagination-color:                     $link-color !default;
+$pagination-bg:                        $white !default;
+$pagination-border:                    #ddd !default;
+
+$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              #ddd !default;
+
+$pagination-active-color:              $white !default;
+$pagination-active-bg:                 $brand-primary !default;
+$pagination-active-border:             $brand-primary !default;
+
+$pagination-disabled-color:            $gray-light !default;
+$pagination-disabled-bg:               $white !default;
+$pagination-disabled-border:           #ddd !default;
+
+
+$pagination-font-size: 					$font-size-base !default;
+$pagination-font-size-md: 				$font-size-md !default;
+$pagination-border-size: 				1px !default;
+$pagination-padding: 					$padding-base-vertical $padding-base-horizontal !default;
+
+//== Pager
+//
+//##
+
+$pager-bg:                             $pagination-bg !default;
+$pager-border:                         $pagination-border !default;
+$pager-border-radius:                  0 !default;
+$pager-padding: 						$pagination-padding !default;
+
+$pager-hover-bg:                       $pagination-hover-bg !default;
+$pager-hover-color: 					$pagination-hover-color !default;
+
+$pager-active-bg:                      $pagination-active-bg !default;
+$pager-active-color:                   $pagination-active-color !default;
+
+$pager-disabled-color:                 $pagination-disabled-color !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */

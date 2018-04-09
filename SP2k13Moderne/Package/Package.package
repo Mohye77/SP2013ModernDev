@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3dc48ff3-d246-487e-a3ba-8174c8892e68" solutionId="3dc48ff3-d246-487e-a3ba-8174c8892e68" resetWebServer="false" sharePointProductVersion="15.0" name="IFS" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="IFS_Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\IFS_Core\IFS_Core.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="2b0d4940-3934-47a5-88f7-25b3bce8f9a3" />
+    <featureReference itemId="d19ca753-dad3-4228-a722-cb52e004839d" />
+    <featureReference itemId="0b220572-6944-4aa6-97a7-9739204e9b0e" />
+    <featureReference itemId="98d31fdb-2884-4196-b52e-4e2f4107f17d" />
+    <featureReference itemId="47194225-df37-4d4f-8133-846b8b3862c6" />
+    <featureReference itemId="3d8f36d5-ee10-438f-8998-625d77b85b9c" />
+    <featureReference itemId="f94eeb2c-b378-4a8d-b5a0-b0398a52449a" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="baa7f87c-f3ca-47be-a58c-6f1a8d002987" />
+    <projectItemReference itemId="5ecea3fc-c931-446e-98da-341fd7062dfb" />
+    <projectItemReference itemId="ec5a859e-b275-4aba-aea5-5d0d73cb7f6f" />
+  </projectItems>
+</package>

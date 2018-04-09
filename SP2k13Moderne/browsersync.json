@@ -1,0 +1,6 @@
+{
+	"proxy":
+	{
+		"target": "http://portalanonymous/"
+	}
+}

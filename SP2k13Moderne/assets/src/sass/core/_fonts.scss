@@ -1,0 +1,28 @@
+/* =================================================================================== 
+ * Fichier : fonts.scss
+ * Description : Fonts declarations
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */
+
+// Iconfont
+@include font-face($iconfont-name, $iconfont-file);
+
+
+// Gotham Light
+//@include font-face($font-family-gotham, Gotham-Light, $fw-light);
+//@include font-face($font-family-gotham, Gotham-LightItalic, $fw-light, italic);
+
+// Gotham Normal
+@include font-face($font-family-gotham, Gotham-Book, $fw-normal);
+@include font-face($font-family-gotham, Gotham-BookItalic, $fw-normal, italic);
+
+// Gotham Medium
+@include font-face($font-family-gotham, Gotham-Medium, $fw-medium);
+@include font-face($font-family-gotham, Gotham-MediumItalic, $fw-medium, italic);
+
+// Gotham Bold
+@include font-face($font-family-gotham, Gotham-Bold, $fw-bold);
+@include font-face($font-family-gotham, Gotham-BoldItalic, $fw-bold, italic);
+
+// Swift Neue Book
+@include font-face($font-family-swift-neue-book, SwiftNeue-Book, $fw-normal);

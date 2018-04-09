@@ -1,0 +1,114 @@
+/* =================================================================================== 
+ * File : buttons.scss
+ * Description : Button's styles
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* BUTTON STRUCTURE  */
+/* ============================================================= */
+
+/**
+ * Button with no style
+ ******************************************/
+.btn-reset,
+button:not(.btn)
+{
+	@include btn-style-reset;
+	min-width: 0;
+}
+
+
+/**
+ * Full width button
+ ******************************************/
+.btn-full-xs
+{
+	/**
+	 * Mobile
+	 ******************************************/
+	@include mobile-max
+	{
+		@include btn-block;
+		margin-top: $spacing-xs;
+	}
+}
+
+
+
+/* ============================================================= */
+/* MAIN BUTTON BASE */
+/* ============================================================= */
+.btn
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	
+	font-size: $btn-font-size;
+	padding: $btn-padding;
+	text-transform: $btn-transform;
+	min-width: $btn-min-width;
+
+	&:before 
+	{
+		margin-right: $spacing-xs;
+	}
+
+
+	&:focus,
+	&:active
+	{
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+/* ============================================================= */
+/* BUTTONS VARIANTS */
+/* ============================================================= */
+.btn-default
+{
+	&:visited
+	{
+		color: $btn-default-color;
+	}
+
+	&:hover,
+	&:focus
+	{
+		color: $btn-default-hover-color;
+		background: $btn-default-hover-bg;
+		border-color: $btn-default-hover-border;
+	}
+}
+
+.btn-primary
+{
+	&:visited
+	{
+		color: $btn-primary-color;
+	}
+}
+
+.btn-revert
+{
+	color: $btn-revert-color;
+	background: $btn-revert-bg;
+	border-color: $btn-revert-border;
+
+	&:visited
+	{
+		color: $btn-revert-color;
+	}
+
+	&:hover,
+	&:focus
+	{
+		color: $btn-revert-hover-color;
+		background: $btn-revert-hover-bg;
+		border-color: $btn-revert-hover-border;
+	}
+}
+

@@ -1,0 +1,308 @@
+/* =================================================================================== 
+ * File : page.scss
+ * Description : Page structure
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+/* ============================================================= */
+/* STRUCTURE */
+/* ============================================================= */
+
+body
+{
+	&.loading
+	{
+		opacity: .5;
+	}
+}
+
+#master
+{
+	background: $body-bg;
+	overflow: hidden;
+	height: 100vh;
+}
+
+#page
+{
+	overflow: auto;
+	overflow-x: hidden;
+	height: calc(100vh - #{$top-header-h});
+
+	.search-opened &,
+	.filters-opened & { overflow: hidden; }
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+#content
+{
+	position: relative;
+	z-index: $zindex-content;
+
+	&:after
+	{
+		@include pos-abs(0,0,0,0);
+		content: '';
+		display: none;
+		background: rgba($brand-primary, .8);
+
+		.search-opened &,
+		.filters-opened & { display: block; }
+	}
+	
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		display: flex;
+		height: 100%;
+		min-height: auto !important;
+		overflow: hidden;
+
+		&:after
+		{
+			.search-opened &,
+			.filters-opened & { display: none; }
+		}
+	}
+}
+
+
+
+
+/* ============================================================= */
+/* MAIN SECTION */
+/* ============================================================= */
+#main
+{
+	padding: $main-padding;
+	
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		flex: 1;
+		overflow: auto;
+		overflow-x: hidden;
+		padding: $main-padding-md;
+	}
+}
+
+#main-footer
+{
+	.copyright
+	{
+		@include border-top($gray-light);
+		margin: $spacing 0 0;
+		padding: $spacing 0;
+		text-align: center;
+	}
+}
+
+#btn-goto-top
+{
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+	
+	&:before
+	{
+		font-size: $font-size-xl;
+		display: block;
+	}
+
+	&:hover,
+	&:focus
+	{
+		background: $white;
+		text-decoration: none;
+	}
+}
+
+/* ============================================================= */
+/* SIDEBAR */
+/* ============================================================= */
+#sidebar 
+{
+	background: $sidebar-bg-md;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+
+	.filters-opened &
+	{
+		display: flex;
+	}
+	
+	.sidebar-header,
+	.sidebar-content,
+	.sidebar-footer
+	{
+		padding: $sidebar-padding;
+	}
+
+	.sidebar-header,
+	.sidebar-footer
+	{
+		flex-shrink: 0;
+		flex-grow: 0;
+	}
+
+	.sidebar-header
+	{
+		@include border-bottom;
+	}
+
+	.sidebar-content
+	{
+		flex: 1;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+
+	.sidebar-footer
+	{
+		@include border-top;
+		background: $sidebar-footer-bg;
+		text-align: center;
+
+		address
+		{
+			text-align: left;
+		}
+
+		.btn
+		{
+			margin: 0 auto;
+		}
+	}
+
+
+	.link-back
+	{
+		color: $gray-light;
+		display: flex;
+		align-items: center;
+
+		&:before
+		{
+			flex: 0;
+		}
+
+		&:hover,
+		&:focus
+		{
+			color: $gray;
+			text-decoration: none;
+		}
+	}
+
+	/**
+	  * Tablet
+	  ******************************************/
+	@include tablet
+	{
+		width: $sidebar-w;
+	}
+
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		@include border-right;
+		height: 100%;
+		
+		flex-shrink: 0;
+		flex-grow: 0;
+
+		.sidebar-content
+		{
+			height: 100%;
+		}
+	}
+}
+
+
+/* ============================================================= */
+/* MESSAGES */
+/* ============================================================= */
+
+/**
+ * Cookie message / IE message
+ ******************************************/
+#cookies-msg,
+#update-ie-msg
+{
+	@include pos-fixed(null, 0, 0, 0);
+	margin-bottom: 0;
+	z-index: $zindex-message;
+	
+}
+
+#cookies-msg
+{
+	background: $gray-darker;
+	color: $white;
+	display: none;
+	padding: $spacing 0;
+	
+	&.opened { display: block; }
+
+	.btn
+	{
+		border-color: $white;
+		color: $white;
+		padding: 5px $spacing;
+		min-width: 100px;
+
+		&:hover
+		{
+			background: $white;
+			color: $text-color;
+		}
+	}
+
+	p
+	{
+		margin: 0 0 $spacing;
+	}
+
+	/**
+	  * Tablet
+	  ******************************************/
+	@include tablet
+	{
+		.container-fluid
+		{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	
+		p
+		{
+			flex: 1;
+			margin: 0 $spacing-xs 0 0;
+		}
+	
+		
+	}
+
+	
+}
+

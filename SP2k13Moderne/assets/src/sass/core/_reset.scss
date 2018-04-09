@@ -1,0 +1,205 @@
+/* ===================================================================================
+ * File : reset.scss
+ * Description : Generic element reset
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */
+
+::-webkit-scrollbar
+{
+	height: 5px;
+	width: 5px;
+}
+ 
+::-webkit-scrollbar-track
+{
+	background: $white;
+	border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb
+{
+	background: $brand-primary;
+	border-radius: 5px; 
+}
+
+html,
+body
+{
+	overflow-x: hidden;
+}
+
+
+html
+{
+	-webkit-font-smoothing: antialiased;
+}
+
+
+body
+{
+	position: relative;
+
+	/*@include tablet-max
+	{
+		font-size: $font-size-base-sm;
+	}*/
+} 
+
+a
+{
+	text-decoration: $link-decoration;
+
+	&:visited { color: inherit; }
+	&:hover,
+	&:focus { text-decoration: $link-hover-decoration; }
+}
+
+a, button
+{
+	&:focus
+	{
+		outline: 0;
+	}
+}
+
+img { max-width: 100%; }
+
+
+p:empty { display: none; }
+
+ul, ol, li { zoom: 1; }
+
+
+ol, ul { padding-left: $spacing; }
+
+dd + dt
+{
+	margin-top: $spacing;
+}
+
+dt
+{
+	@include text-bold;
+	font-size: $font-size-base;
+}
+
+dd
+{
+	margin-top: $spacing-xs;
+}
+
+.dl-horizontal
+{
+	@include tablet
+	{
+		dd
+		{
+			margin-top: 0;
+		}
+
+		dd + dt,
+		dd + dt + dd
+		{
+			margin-top: $spacing;
+		}
+	}
+}
+
+
+
+blockquote
+{
+ 
+}
+
+strong
+{
+	@include text-bold;
+}
+
+em
+{
+	@include text-italic;
+}
+
+
+audio,
+canvas,
+img,
+video { vertical-align: middle; }
+
+
+fieldset
+{
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"]
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+hr
+{
+	margin: $hr-margin-v auto;
+	width: $hr-width;
+}
+
+math { display: none; }
+
+
+/* ============================================================= */
+/* SHAREPOINT RESET */
+/* ============================================================= */
+
+#s4-workspace
+{
+	@include square(auto !important);
+}
+
+.ms-backgroundImage
+{
+	background: 0;
+}
+
+#suiteBar,
+#s4-ribbonrow
+{
+	* { box-sizing: content-box; }
+	img { max-width: none; }
+}
+
+#s4-bodyContainer,
+#s4-titlerow
+{
+	height: auto;
+	margin: 0;
+    padding: 0;
+}
+
+#contentBox
+{
+	margin: 0;
+	min-width: auto;
+}
+
+#master
+{
+	.ms-webpart-zone,
+	.ms-webpart-cell-vertical,
+	.ms-webpart-chrome-vertical
+	{
+		display: block !important;
+	}
+	
+	.ms-fullWidth
+	{
+		width: auto !important;
+	}
+	
+}
+

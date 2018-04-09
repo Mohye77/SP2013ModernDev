@@ -1,0 +1,448 @@
+/* =================================================================================== 
+ * File : mixins.scss
+ * Description : SASS mixins / helpers
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* MEDIA QUERIES HELPERS */
+/* ============================================================= */
+
+/**
+ * Usage
+	@include mq-mixin
+	{
+		property: value;
+		property: value;
+	};
+ *
+ ******************************************/
+/**
+ * Min-widths
+ ******************************************/
+@mixin mobile-portrait
+{
+	@media (min-width: #{$screen-xxs-min}) { @content; }
+}
+
+@mixin mobile
+{
+	@media (min-width: #{$screen-xs-min}) { @content; }
+}
+
+@mixin mobile-landscape
+{
+	@media (min-width: #{$screen-xs-min}) { @content; }
+}
+
+@mixin tablet
+{
+	@media (min-width: #{$screen-sm-min}) { @content; }
+}
+
+@mixin desktop
+{
+	@media (min-width: #{$screen-md-min}) { @content; }
+}
+
+@mixin lg-desktop
+{
+	@media (min-width: #{$screen-lg-min}) { @content; }
+}
+
+/**
+ * Max-widths
+ ******************************************/
+@mixin mobile-portrait-max
+{
+	@media (max-width: #{$screen-xxs-max}) { @content; }
+}
+
+@mixin mobile-max
+{
+	@media (max-width: #{$screen-xs-max}) { @content; }
+}
+
+@mixin mobile-landscape-max
+{
+	@media (max-width: #{$screen-xs-max}) { @content; }
+}
+
+@mixin tablet-max
+{
+	@media (max-width: #{$screen-sm-max}) { @content; }
+}
+
+@mixin desktop-max
+{
+	@media (max-width: #{$screen-md-max}) { @content; }
+}
+
+/**
+ * Only specific width
+ ******************************************/
+@mixin tablet-only
+{
+	@media (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) { @content; }
+}
+
+@mixin desktop-only
+{
+	@media (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) { @content; }
+}
+
+
+/* ============================================================= */
+/* @FONT-FACE */
+/* ============================================================= */
+@mixin font-face($name, $file, $weight: normal, $style: normal)
+{
+	@font-face
+	{
+		font-family: $name;
+		src:url('../fonts/#{$file}.eot');
+		src:url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/#{$file}.woff') format('woff'),
+			url('../fonts/#{$file}.ttf') format('truetype'),
+			url('../fonts/iconfont.svg##{$name}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+/* ============================================================= */
+/* CSS3 TRANSITION / ANIMATIONS */
+/* ============================================================= */
+@mixin transform-style($style)
+{
+	-webkit-transform-style: $style; 
+	        transform-style: $style;
+}
+
+@mixin transform-flat()
+{
+	@include transform-style(flat);
+}
+
+@mixin transform-3d()
+{
+	@include transform-style(preserve-3d);
+}
+
+
+/* ============================================================= */
+/* BLOCK FORMATTING */
+/* ============================================================= */
+@mixin z1() { zoom: 1; }
+
+@mixin border($color: $border-base-color, $width: 1px, $style: solid) { border: $width $style $color; }
+@mixin border-left($color: $border-base-color, $width: 1px, $style: solid) { border-left: $width $style $color; }
+@mixin border-top($color: $border-base-color, $width: 1px, $style: solid) { border-top: $width $style $color; }
+@mixin border-right($color: $border-base-color, $width: 1px, $style: solid) { border-right: $width $style $color; }
+@mixin border-bottom($color: $border-base-color, $width: 1px, $style: solid) { border-bottom: $width $style $color; }
+
+
+@mixin outline($color: #000) { outline: 1px solid $color; }
+@mixin outline-ie($color: #000) { @include border($color); margin:-1px; }
+
+
+@mixin inline-block-ie()
+{
+	display: inline-block;
+	
+	.ielt8 &
+	{	
+		display: inline;
+		@include z1;
+	}
+}
+
+@mixin inline-block-spacing($spacing: -4px)
+{
+	letter-spacing: $spacing;
+    word-spacing: $spacing;
+}
+
+@mixin reset-side($side)
+{
+	border-#{$side}: 0;
+	margin-#{$side}: 0;
+	padding-#{$side}: 0;
+}
+
+@mixin margin-v($margin)
+{
+	margin-top: $margin;
+	margin-bottom: $margin;
+}
+
+@mixin margin-h($margin)
+{
+	margin-left: $margin;
+	margin-right: $margin;
+}
+
+@mixin padding-v($padding)
+{
+	padding-top: $padding;
+	padding-bottom: $padding;
+}
+
+@mixin padding-h($padding)
+{
+	padding-left: $padding;
+	padding-right: $padding;
+}
+
+@mixin btn-style-reset
+{
+	@include no-underlined(none);
+	background: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none; 
+}
+
+@mixin btn-block
+{
+	min-width: 0;
+	display: block;
+	width: 100%;
+}
+
+
+/* ============================================================= */
+/* TEXT FORMATTING */
+/* ============================================================= */
+
+@mixin ff-gotham
+{
+	font-family: $font-family-gotham;
+}
+
+@mixin ff-swift-neue-book
+{
+	font-family: $font-family-swift-neue-book;
+}
+
+@mixin text-normal
+{
+	font-weight: $fw-normal;
+}
+
+@mixin text-italic
+{
+	@include text-normal;
+	font-style: italic;
+}
+
+@mixin text-medium
+{
+	font-weight: $fw-medium;
+}
+
+@mixin text-medium-italic
+{
+	font-weight: $fw-medium;
+	font-style: italic;
+}
+
+@mixin text-bold
+{
+	font-weight: $fw-bold;
+}
+
+@mixin text-bold-italic
+{
+	@include text-bold;
+	font-style: italic;
+}
+
+
+@mixin font-size-em($target: 10, $root: 10)
+{
+	font-size: ($target / $root) + 0em;
+}
+
+@mixin line-height($cible: 12, $contexte: 10)
+{
+	line-height: ($cible / $contexte) + 0;
+}
+
+@mixin underlined($hover: none)
+{
+	text-decoration: underline;
+	&:hover, &:focus { text-decoration: $hover; }
+}
+
+@mixin no-underlined($hover: underline)
+{
+	text-decoration: none;
+	&:hover, &:focus { text-decoration: $hover; }
+}
+
+@mixin reset-list($margin: 0, $padding: 0)
+{
+	list-style: none;
+	margin: $margin;
+	padding: $padding;
+}
+
+/* ============================================================= */
+/* POSITIONING */
+/* ============================================================= */
+@mixin pos($type: absolute, $top: null, $right: null, $bottom: null, $left: null)
+{
+	position: $type;
+	
+	@if $top != null 	{ top: $top; 		}
+	@if $right != null 	{ right: $right; 	}
+	@if $bottom != null	{ bottom: $bottom;	}
+	@if $left != null 	{ left: $left; 		}
+}
+
+@mixin pos-rel($top: null, $right: null, $bottom: null, $left: null)
+{
+	@include pos(relative, $top, $right, $bottom, $left);
+}
+
+@mixin pos-abs($top: null, $right: null, $bottom: null, $left: null)
+{
+	@include pos(absolute, $top, $right, $bottom, $left);
+}
+
+@mixin pos-fixed($top: null, $right: null, $bottom: null, $left: null)
+{
+	@include pos(fixed, $top, $right, $bottom, $left);
+}
+
+@mixin pos-center-x
+{
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+@mixin pos-center-y
+{
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+@mixin pos-center
+{
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+
+/* ============================================================= */
+/* IMAGES */
+/* ============================================================= */
+@mixin ir($width: 1px, $height: 1px)
+{
+	color: rgba(0,0,0,0);
+	height: $height;
+	/*font-size: 0;*/
+	overflow: hidden;
+	/*padding-left: $width;*/
+	white-space: nowrap;
+	width: $width;
+	text-indent: $width * 2;
+}
+
+@mixin img-block() { a, img { display: block; } }
+
+
+/* ============================================================= */
+/* SPRITES */
+/* ============================================================= */
+@mixin sprite($sprite, $position: 0 0, $repeat: no-repeat)
+{
+	background: url('../images/sprites/sprite_#{$sprite}.png') $position $repeat;
+}
+
+@mixin sprite-global($position: 0 0)
+{
+	@include sprite(global, $position);
+}
+
+
+/* ============================================================= */
+/* TRIANGLES */
+/* ============================================================= */
+@mixin triangle-base()
+{
+	@include rotate(360deg);
+	@include square(0px);
+	border-style: solid;
+	content: '';
+	display: inline-block;
+}
+
+@mixin triangle($width: 0, $color: #000)
+{
+	@include triangle-base;
+	border-width: $width;
+	border-color: $color;
+}
+
+@mixin triangle-tl($width: 0, $height: 0, $color: #000)
+{
+	@include triangle($width $width 0 0, $color transparent transparent);
+}
+
+@mixin triangle-t($width: 0, $height: 0, $color: #000)
+{
+	@include triangle(0 ($width / 2) $height, transparent transparent $color);
+}
+
+@mixin triangle-tr($width: 0, $height: 0, $color: #000)
+{
+	@include triangle(0 $width $width 0, transparent $color transparent transparent);
+}
+
+@mixin triangle-r($width: 0, $height: 0, $color: #000)
+{
+	@include triangle(($height / 2) 0 ($height / 2) $width, transparent transparent transparent $color);
+}
+
+@mixin triangle-br($width: 0, $height: 0, $color: #000)
+{
+	@include triangle(0 0 $width $width, transparent transparent $color);
+}
+
+@mixin triangle-b($width: 0, $height: 0, $color: #000)
+{
+	@include triangle($height ($width / 2) 0, $color transparent transparent);
+}
+
+@mixin triangle-bl($width: 0, $height: 0, $color: #000)
+{
+	@include triangle($width 0 0 $width, transparent transparent transparent $color);
+}
+
+@mixin triangle-l($width: 0, $height: 0, $color: #000)
+{
+	@include triangle(($height / 2) $width ($height / 2) 0, transparent $color transparent transparent);
+}
+
+
+
+/* ============================================================= */
+/* PSEUDO-CONTENT */
+/* ============================================================= */
+@mixin struct-pseudo-content
+{
+	content: '';
+	display: inline-block;
+}
+
+@mixin img-pseudo-content($position: 0 0, $width: 1px, $height: 1px, $sprite: global)
+{
+	@include sprite($sprite, $position);
+	/*@include struct-pseudo-content;*/
+	@include size($width, $height);
+}

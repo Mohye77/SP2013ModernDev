@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Control Id="ShortcutTopDelegateUserControl" Sequence="1" ControlSrc="~/_controltemplates/15/IFS/UC_ShortcutTopLinks.ascx"></Control>
+  <Control Id="ServerVariablesDelegateUserControl" Sequence="1" ControlSrc="~/_controltemplates/15/IFS/UC_ServerVariables.ascx"></Control>
+  <Control Id="DisclaimerDelegateUserControl" Sequence="1" ControlSrc="~/_controltemplates/15/IFS/UC_Disclaimer.ascx"></Control>
+  <Control Id="JSTemplateDelegateUserControl" Sequence="1" ControlSrc="~/_controltemplates/15/IFS/UC_JSTemplate.ascx"></Control>
+  <Control Id="CookiesMessageDelegateUserControl" Sequence="1" ControlSrc="~/_controltemplates/15/IFS/UC_CookiesMessage.ascx"></Control>
+</Elements>

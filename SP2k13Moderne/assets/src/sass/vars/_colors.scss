@@ -1,0 +1,64 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$white:		             #fff !default;
+$black:		             #000 !default;
+
+$gray-base:              #000 !default;
+$gray-darker:            #222 !default; 
+$gray-dark:              #333 !default;   
+$gray:                   #666 !default; 
+$gray-light:             #999 !default; 
+$gray-lighter:           #e5e9ee  !default; 
+
+$brand-primary:         #002855 !default;
+$brand-primary-light:   lighten($brand-primary, 5%) !default;
+$brand-primary-dark:   	darken($brand-primary, 5%) !default;
+
+$brand-success:         #30b17c !default;
+$brand-success-light: 	lighten($brand-success, 5%) !default;
+$brand-success-dark: 	darken($brand-success, 5%) !default;
+
+$brand-info:            #5bc0de !default;
+$brand-info-light: 		lighten($brand-info, 5%) !default;
+$brand-info-dark: 		darken($brand-info, 5%) !default;
+
+$brand-warning:         #f27435 !default;
+$brand-warning-light: 	lighten($brand-warning, 5%) !default;
+$brand-warning-dark: 	darken($brand-warning, 5%) !default;
+
+$brand-danger:          #dc0808 !default;
+$brand-danger-light: 	lighten($brand-danger, 5%) !default;
+$brand-danger-dark: 	darken($brand-danger, 5%) !default;
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+$border-base-color: 			#f3f3f3 !default;

@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D99FC4D-4995-484E-953D-A4D0FA86E717}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SP2k13Moderne</RootNamespace>
+    <AssemblyName>SP2k13Moderne</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SP2k13Modernekey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Newtonsoft.Json\v4.0_10.0.0.0__30ad4fe6b2a6aeed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_Contact.ascx.cs">
+      <DependentUpon>UC_Contact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_Contact.ascx.designer.cs">
+      <DependentUpon>UC_Contact.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_CookiesMessage.ascx.cs">
+      <DependentUpon>UC_CookiesMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_CookiesMessage.ascx.designer.cs">
+      <DependentUpon>UC_CookiesMessage.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_Disclaimer.ascx.cs">
+      <DependentUpon>UC_Disclaimer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_Disclaimer.ascx.designer.cs">
+      <DependentUpon>UC_Disclaimer.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_FundDetails.ascx.cs">
+      <DependentUpon>UC_FundDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_FundDetails.ascx.designer.cs">
+      <DependentUpon>UC_FundDetails.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_FundsList.ascx.cs">
+      <DependentUpon>UC_FundsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_FundsList.ascx.designer.cs">
+      <DependentUpon>UC_FundsList.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_JSTemplate.ascx.cs">
+      <DependentUpon>UC_JSTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_JSTemplate.ascx.designer.cs">
+      <DependentUpon>UC_JSTemplate.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_MainFooter.ascx.cs">
+      <DependentUpon>UC_MainFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_MainFooter.ascx.designer.cs">
+      <DependentUpon>UC_MainFooter.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_ServerVariables.ascx.cs">
+      <DependentUpon>UC_ServerVariables.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_ServerVariables.ascx.designer.cs">
+      <DependentUpon>UC_ServerVariables.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_ShortcutTopLinks.ascx.cs">
+      <DependentUpon>UC_ShortcutTopLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SP2k13Moderne\UC_ShortcutTopLinks.ascx.designer.cs">
+      <DependentUpon>UC_ShortcutTopLinks.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\SP2k13Moderne.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SP2k13Moderne.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\dist\css\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2b25514f-b03f-4028-9329-ebf8859d0b02}</SharePointProjectItemId>
+    </None>
+    <None Include="assets\dist\fonts\Avenir-Book.eot" />
+    <None Include="assets\dist\fonts\Avenir-Book.otf" />
+    <None Include="assets\dist\fonts\Avenir-Book.ttf" />
+    <None Include="assets\dist\fonts\Avenir-Book.woff" />
+    <None Include="assets\dist\fonts\Avenir-Book.woff2" />
+    <None Include="assets\dist\fonts\Gotham-Bold.eot" />
+    <None Include="assets\dist\fonts\Gotham-Bold.otf" />
+    <None Include="assets\dist\fonts\Gotham-Bold.ttf" />
+    <None Include="assets\dist\fonts\Gotham-Bold.woff" />
+    <None Include="assets\dist\fonts\Gotham-Bold.woff2" />
+    <None Include="assets\dist\fonts\Gotham-BoldItalic.eot" />
+    <None Include="assets\dist\fonts\Gotham-BoldItalic.otf" />
+    <None Include="assets\dist\fonts\Gotham-BoldItalic.ttf" />
+    <None Include="assets\dist\fonts\Gotham-BoldItalic.woff" />
+    <None Include="assets\dist\fonts\Gotham-BoldItalic.woff2" />
+    <None Include="assets\dist\fonts\Gotham-Book.eot" />
+    <None Include="assets\dist\fonts\Gotham-Book.otf" />
+    <None Include="assets\dist\fonts\Gotham-Book.ttf" />
+    <None Include="assets\dist\fonts\Gotham-Book.woff" />
+    <None Include="assets\dist\fonts\Gotham-Book.woff2" />
+    <None Include="assets\dist\fonts\Gotham-BookItalic.eot" />
+    <None Include="assets\dist\fonts\Gotham-BookItalic.otf" />
+    <None Include="assets\dist\fonts\Gotham-BookItalic.ttf" />
+    <None Include="assets\dist\fonts\Gotham-BookItalic.woff" />
+    <None Include="assets\dist\fonts\Gotham-BookItalic.woff2" />
+    <None Include="assets\dist\fonts\Gotham-Light.eot" />
+    <None Include="assets\dist\fonts\Gotham-Light.otf" />
+    <None Include="assets\dist\fonts\Gotham-Light.ttf" />
+    <None Include="assets\dist\fonts\Gotham-Light.woff" />
+    <None Include="assets\dist\fonts\Gotham-Light.woff2" />
+    <None Include="assets\dist\fonts\Gotham-LightItalic.eot" />
+    <None Include="assets\dist\fonts\Gotham-LightItalic.otf" />
+    <None Include="assets\dist\fonts\Gotham-LightItalic.ttf" />
+    <None Include="assets\dist\fonts\Gotham-LightItalic.woff" />
+    <None Include="assets\dist\fonts\Gotham-LightItalic.woff2" />
+    <None Include="assets\dist\fonts\Gotham-Medium.eot" />
+    <None Include="assets\dist\fonts\Gotham-Medium.otf" />
+    <None Include="assets\dist\fonts\Gotham-Medium.ttf" />
+    <None Include="assets\dist\fonts\Gotham-Medium.woff" />
+    <None Include="assets\dist\fonts\Gotham-Medium.woff2" />
+    <None Include="assets\dist\fonts\Gotham-MediumItalic.eot" />
+    <None Include="assets\dist\fonts\Gotham-MediumItalic.otf" />
+    <None Include="assets\dist\fonts\Gotham-MediumItalic.ttf" />
+    <None Include="assets\dist\fonts\Gotham-MediumItalic.woff" />
+    <None Include="assets\dist\fonts\Gotham-MediumItalic.woff2" />
+    <None Include="assets\dist\fonts\iconfont.eot" />
+    <None Include="assets\dist\fonts\iconfont.ttf" />
+    <None Include="assets\dist\fonts\iconfont.woff" />
+    <None Include="assets\dist\fonts\iconfont.woff2" />
+    <None Include="assets\dist\fonts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1350d260-0bf1-432b-9185-a6e4b19ec8b5}</SharePointProjectItemId>
+    </None>
+    <None Include="assets\dist\fonts\SwiftNeue-Book.eot" />
+    <None Include="assets\dist\fonts\SwiftNeue-Book.otf" />
+    <None Include="assets\dist\fonts\SwiftNeue-Book.ttf" />
+    <None Include="assets\dist\fonts\SwiftNeue-Book.woff" />
+    <None Include="assets\dist\fonts\SwiftNeue-Book.woff2" />
+    <None Include="assets\dist\js\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c99fc604-8c26-4f8c-a0b9-fb1c05e4b8b9}</SharePointProjectItemId>
+    </None>
+    <None Include="assets\images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{441f77b5-3b84-4caa-8b9c-541ea09554e7}</SharePointProjectItemId>
+    </None>
+    <None Include="assets\layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7997221a-7164-4d6b-80ae-d93b2b9b4410}</SharePointProjectItemId>
+    </None>
+    <None Include="assets\masterpages\SP2k13Moderne-default.min.master" />
+    <None Include="assets\masterpages\SP2k13Moderne-default.master" />
+    <None Include="assets\masterpages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac799a15-e895-484d-837c-04141a88ddbd}</SharePointProjectItemId>
+    </None>
+    <None Include="assets\src\sass\bootstrap\mixins\_alerts.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_background-variant.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_border-radius.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_buttons.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_center-block.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_clearfix.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_forms.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_gradients.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_grid.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_hide-text.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_image.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_labels.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_list-group.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_opacity.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_pagination.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_panels.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_progress-bar.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_reset-filter.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_reset-text.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_resize.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_size.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_tab-focus.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_table-row.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_text-overflow.scss" />
+    <None Include="assets\src\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <None Include="assets\src\sass\bootstrap\_alerts.scss" />
+    <None Include="assets\src\sass\bootstrap\_badges.scss" />
+    <None Include="assets\src\sass\bootstrap\_breadcrumbs.scss" />
+    <None Include="assets\src\sass\bootstrap\_button-groups.scss" />
+    <None Include="assets\src\sass\bootstrap\_buttons.scss" />
+    <None Include="assets\src\sass\bootstrap\_carousel.scss" />
+    <None Include="assets\src\sass\bootstrap\_close.scss" />
+    <None Include="assets\src\sass\bootstrap\_code.scss" />
+    <None Include="assets\src\sass\bootstrap\_component-animations.scss" />
+    <None Include="assets\src\sass\bootstrap\_dropdowns.scss" />
+    <None Include="assets\src\sass\bootstrap\_forms.scss" />
+    <None Include="assets\src\sass\bootstrap\_glyphicons.scss" />
+    <None Include="assets\src\sass\bootstrap\_grid.scss" />
+    <None Include="assets\src\sass\bootstrap\_input-groups.scss" />
+    <None Include="assets\src\sass\bootstrap\_jumbotron.scss" />
+    <None Include="assets\src\sass\bootstrap\_labels.scss" />
+    <None Include="assets\src\sass\bootstrap\_list-group.scss" />
+    <None Include="assets\src\sass\bootstrap\_media.scss" />
+    <None Include="assets\src\sass\bootstrap\_mixins.scss" />
+    <None Include="assets\src\sass\bootstrap\_modals.scss" />
+    <None Include="assets\src\sass\bootstrap\_navbar.scss" />
+    <None Include="assets\src\sass\bootstrap\_navs.scss" />
+    <None Include="assets\src\sass\bootstrap\_normalize.scss" />
+    <None Include="assets\src\sass\bootstrap\_pager.scss" />
+    <None Include="assets\src\sass\bootstrap\_pagination.scss" />
+    <None Include="assets\src\sass\bootstrap\_panels.scss" />
+    <None Include="assets\src\sass\bootstrap\_popovers.scss" />
+    <None Include="assets\src\sass\bootstrap\_print.scss" />
+    <None Include="assets\src\sass\bootstrap\_progress-bars.scss" />
+    <None Include="assets\src\sass\bootstrap\_responsive-embed.scss" />
+    <None Include="assets\src\sass\bootstrap\_responsive-utilities.scss" />
+    <None Include="assets\src\sass\bootstrap\_scaffolding.scss" />
+    <None Include="assets\src\sass\bootstrap\_tables.scss" />
+    <None Include="assets\src\sass\bootstrap\_theme.scss" />
+    <None Include="assets\src\sass\bootstrap\_thumbnails.scss" />
+    <None Include="assets\src\sass\bootstrap\_tooltip.scss" />
+    <None Include="assets\src\sass\bootstrap\_type.scss" />
+    <None Include="assets\src\sass\bootstrap\_utilities.scss" />
+    <None Include="assets\src\sass\bootstrap\_variables.scss" />
+    <None Include="assets\src\sass\bootstrap\_wells.scss" />
+    <None Include="assets\src\sass\compile.scss" />
+    <None Include="assets\src\sass\components\_blocks.scss" />
+    <None Include="assets\src\sass\components\_buttons.scss" />
+    <None Include="assets\src\sass\components\_dropdowns.scss" />
+    <None Include="assets\src\sass\components\_forms.scss" />
+    <None Include="assets\src\sass\components\_links.scss" />
+    <None Include="assets\src\sass\components\_modals.scss" />
+    <None Include="assets\src\sass\components\_tables.scss" />
+    <None Include="assets\src\sass\core\_animations.scss" />
+    <None Include="assets\src\sass\core\_bootstrap.scss" />
+    <None Include="assets\src\sass\core\_fonts.scss" />
+    <None Include="assets\src\sass\core\_global.scss" />
+    <None Include="assets\src\sass\core\_iconfont.scss" />
+    <None Include="assets\src\sass\core\_iconfont.tpl.scss" />
+    <None Include="assets\src\sass\core\_mixins.scss" />
+    <None Include="assets\src\sass\core\_reset.scss" />
+    <None Include="assets\src\sass\layout\_grid.scss" />
+    <None Include="assets\src\sass\layout\_header.scss" />
+    <None Include="assets\src\sass\layout\_page.scss" />
+    <None Include="assets\src\sass\pages\_contact.scss" />
+    <None Include="assets\src\sass\pages\_disclaimer.scss" />
+    <None Include="assets\src\sass\pages\_funds_list.scss" />
+    <None Include="assets\src\sass\pages\_fund_details.scss" />
+    <None Include="assets\src\sass\vars\_navs.scss" />
+    <None Include="assets\src\sass\vars\_alerts.scss" />
+    <None Include="assets\src\sass\vars\_buttons.scss" />
+    <None Include="assets\src\sass\vars\_colors.scss" />
+    <None Include="assets\src\sass\vars\_common.scss" />
+    <None Include="assets\src\sass\vars\_dropdowns.scss" />
+    <None Include="assets\src\sass\vars\_forms.scss" />
+    <None Include="assets\src\sass\vars\_grid.scss" />
+    <None Include="assets\src\sass\vars\_labels.scss" />
+    <None Include="assets\src\sass\vars\_layout.scss" />
+    <None Include="assets\src\sass\vars\_misc.scss" />
+    <None Include="assets\src\sass\vars\_modals.scss" />
+    <None Include="assets\src\sass\vars\_paginations.scss" />
+    <None Include="assets\src\sass\vars\_tables.scss" />
+    <None Include="assets\src\sass\vars\_thumbnails.scss" />
+    <None Include="assets\src\sass\vars\_typos.scss" />
+    <None Include="assets\src\sass\vars\_zindex.scss" />
+    <None Include="assets\src\sass\vendors\_typeahead.scss" />
+    <None Include="assets\src\sass\_components.scss" />
+    <None Include="assets\src\sass\_core.scss" />
+    <None Include="assets\src\sass\_example.scss" />
+    <None Include="assets\src\sass\_layout.scss" />
+    <None Include="assets\src\sass\_pages.scss" />
+    <None Include="assets\src\sass\_vars.scss" />
+    <None Include="assets\src\sass\_vendors.scss" />
+    <None Include="browsersync.json" />
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{baa7f87c-f3ca-47be-a58c-6f1a8d002987}</SharePointProjectItemId>
+    </None>
+    <None Include="DelegateControls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{be52b38f-57f0-45cc-a568-79c872097492}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\WEB_DELEGATECONTROLS\WEB_DELEGATECONTROLS.feature">
+      <FeatureId>{f94eeb2c-b378-4a8d-b5a0-b0398a52449a}</FeatureId>
+    </None>
+    <None Include="Features\SITE_WEBPARTS\SITE_WEBPARTS.feature">
+      <FeatureId>{3d8f36d5-ee10-438f-8998-625d77b85b9c}</FeatureId>
+    </None>
+    <None Include="Features\SITE_LAYOUTS\SITE_LAYOUTS.feature">
+      <FeatureId>{98d31fdb-2884-4196-b52e-4e2f4107f17d}</FeatureId>
+    </None>
+    <None Include="Features\SITE_FONTS\SITE_FONTS.feature">
+      <FeatureId>{0b220572-6944-4aa6-97a7-9739204e9b0e}</FeatureId>
+    </None>
+    <None Include="Features\SITE_CSS\SITE_CSS.feature">
+      <FeatureId>{d19ca753-dad3-4228-a722-cb52e004839d}</FeatureId>
+    </None>
+    <None Include="Features\SITE_IMAGES\SITE_IMAGES.feature">
+      <FeatureId>{2b0d4940-3934-47a5-88f7-25b3bce8f9a3}</FeatureId>
+    </None>
+    <None Include="Features\SITE_JS\SITE_JS.feature">
+      <FeatureId>{47194225-df37-4d4f-8133-846b8b3862c6}</FeatureId>
+    </None>
+    <None Include="gulpconfig.json" />
+    <None Include="jsfiles.json" />
+    <None Include="SP2k13Modernekey.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec5a859e-b275-4aba-aea5-5d0d73cb7f6f}</SharePointProjectItemId>
+    </None>
+    <None Include="package.json" />
+    <None Include="Package\Package.package">
+      <PackageId>{3dc48ff3-d246-487e-a3ba-8174c8892e68}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="README.md" />
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ecea3fc-c931-446e-98da-341fd7062dfb}</SharePointProjectItemId>
+    </None>
+    <None Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\images\bg\" />
+    <Folder Include="assets\images\content\" />
+    <Folder Include="assets\images\icons\" />
+    <Folder Include="assets\images\sprites\" />
+    <Folder Include="assets\images\temp\" />
+    <Folder Include="Layouts\SP2k13Moderne\" />
+    <Folder Include="WebParts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\dist\css\compile.css" />
+    <Content Include="assets\dist\css\compile.min.css" />
+    <Content Include="assets\dist\css\Elements.xml" />
+    <Content Include="assets\dist\fonts\Avenir-Book.svg" />
+    <Content Include="assets\dist\fonts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="assets\dist\fonts\Gotham-Bold.svg" />
+    <Content Include="assets\dist\fonts\Gotham-BoldItalic.svg" />
+    <Content Include="assets\dist\fonts\Gotham-Book.svg" />
+    <Content Include="assets\dist\fonts\Gotham-BookItalic.svg" />
+    <Content Include="assets\dist\fonts\Gotham-Light.svg" />
+    <Content Include="assets\dist\fonts\Gotham-LightItalic.svg" />
+    <Content Include="assets\dist\fonts\Gotham-Medium.svg" />
+    <Content Include="assets\dist\fonts\Gotham-MediumItalic.svg" />
+    <Content Include="assets\dist\fonts\iconfont.svg" />
+    <Content Include="assets\dist\fonts\SwiftNeue-Book.svg" />
+    <Content Include="assets\dist\js\Elements.xml" />
+    <Content Include="assets\dist\js\jquery.plugins.js" />
+    <Content Include="assets\dist\js\jquery.plugins.min.js" />
+    <Content Include="assets\dist\js\lib\bootstrap.js" />
+    <Content Include="assets\dist\js\lib\bootstrap.min.js" />
+    <Content Include="assets\dist\js\lib\browser-polyfill.js" />
+    <Content Include="assets\dist\js\lib\browser-polyfill.min.js" />
+    <Content Include="assets\dist\js\lib\jquery.js" />
+    <Content Include="assets\dist\js\lib\jquery.min.js" />
+    <Content Include="assets\dist\js\lib\modernizr.min.js" />
+    <Content Include="assets\dist\js\main.js" />
+    <Content Include="assets\dist\js\main.min.js" />
+    <Content Include="assets\images\Elements.xml" />
+    <Content Include="assets\images\favicon\android-icon-144x144.png" />
+    <Content Include="assets\images\favicon\android-icon-192x192.png" />
+    <Content Include="assets\images\favicon\android-icon-36x36.png" />
+    <Content Include="assets\images\favicon\android-icon-48x48.png" />
+    <Content Include="assets\images\favicon\android-icon-72x72.png" />
+    <Content Include="assets\images\favicon\android-icon-96x96.png" />
+    <Content Include="assets\images\favicon\apple-icon-114x114.png" />
+    <Content Include="assets\images\favicon\apple-icon-120x120.png" />
+    <Content Include="assets\images\favicon\apple-icon-144x144.png" />
+    <Content Include="assets\images\favicon\apple-icon-152x152.png" />
+    <Content Include="assets\images\favicon\apple-icon-180x180.png" />
+    <Content Include="assets\images\favicon\apple-icon-57x57.png" />
+    <Content Include="assets\images\favicon\apple-icon-60x60.png" />
+    <Content Include="assets\images\favicon\apple-icon-72x72.png" />
+    <Content Include="assets\images\favicon\apple-icon-76x76.png" />
+    <Content Include="assets\images\favicon\apple-icon-precomposed.png" />
+    <Content Include="assets\images\favicon\apple-icon.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-114x114.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-120x120.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-144x144.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-152x152.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-180x180.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-57x57.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-60x60.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-72x72.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-76x76.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon-precomposed.png" />
+    <Content Include="assets\images\favicon\apple-touch-icon.png" />
+    <Content Include="assets\images\favicon\browserconfig.xml" />
+    <Content Include="assets\images\favicon\favicon-160x160.png" />
+    <Content Include="assets\images\favicon\favicon-16x16.png" />
+    <Content Include="assets\images\favicon\favicon-192x192.png" />
+    <Content Include="assets\images\favicon\favicon-32x32.png" />
+    <Content Include="assets\images\favicon\favicon-96x96.png" />
+    <Content Include="assets\images\favicon\favicon.ico" />
+    <Content Include="assets\images\favicon\favicon.png" />
+    <Content Include="assets\images\favicon\ms-icon-144x144.png" />
+    <Content Include="assets\images\favicon\ms-icon-150x150.png" />
+    <Content Include="assets\images\favicon\ms-icon-310x310.png" />
+    <Content Include="assets\images\favicon\ms-icon-70x70.png" />
+    <Content Include="assets\images\favicon\mstile-144x144.png" />
+    <Content Include="assets\images\favicon\mstile-150x150.png" />
+    <Content Include="assets\images\favicon\mstile-310x150.png" />
+    <Content Include="assets\images\favicon\mstile-310x310.png" />
+    <Content Include="assets\images\favicon\mstile-70x70.png" />
+    <Content Include="assets\images\logos\logo_edr_blue.png" />
+    <Content Include="assets\images\logos\logo_edr_blue.svg" />
+    <Content Include="assets\images\logos\logo_edr_white.png" />
+    <Content Include="assets\images\logos\logo_edr_white.svg" />
+    <Content Include="assets\images\logos\logo_standalone.png" />
+    <Content Include="assets\images\logos\logo_standalone.svg" />
+    <Content Include="assets\images\logos\text_edr_blue.png" />
+    <Content Include="assets\images\logos\text_edr_blue.svg" />
+    <Content Include="assets\images\logos\text_edr_white.png" />
+    <Content Include="assets\images\logos\text_edr_white.svg" />
+    <Content Include="assets\layouts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="assets\layouts\lyt-one-wp-zone.aspx" />
+    <Content Include="assets\masterpages\Elements.xml" />
+    <TypeScriptCompile Include="assets\src\js\cookies.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\currency.ts" />
+    <Content Include="assets\src\js\plugins\array-includes.js" />
+    <Content Include="assets\src\js\plugins\array-includes.min.js" />
+    <Content Include="assets\src\js\plugins\cookie.js" />
+    <Content Include="assets\src\js\plugins\cookie.min.js" />
+    <Content Include="assets\src\js\plugins\index.js" />
+    <Content Include="assets\src\js\plugins\index.min.js" />
+    <Content Include="assets\src\js\plugins\jquery.floatThead.js" />
+    <Content Include="assets\src\js\plugins\jquery.floatThead.min.js" />
+    <Content Include="assets\src\js\plugins\jquery.scrollTo.js" />
+    <Content Include="assets\src\js\plugins\jquery.scrollTo.min.js" />
+    <Content Include="assets\src\js\plugins\jsrender.js" />
+    <Content Include="assets\src\js\plugins\jsrender.min.js" />
+    <Content Include="assets\src\js\plugins\typeahead.bundle.js" />
+    <Content Include="assets\src\js\plugins\typeahead.bundle.min.js" />
+    <Content Include="assets\src\svg\originals\arrow-down.svg" />
+    <Content Include="assets\src\svg\originals\arrow-left.svg" />
+    <Content Include="assets\src\svg\originals\arrow-right.svg" />
+    <Content Include="assets\src\svg\originals\arrow-up.svg" />
+    <Content Include="assets\src\svg\originals\bar-chart.svg" />
+    <Content Include="assets\src\svg\originals\chat-bubble.svg" />
+    <Content Include="assets\src\svg\originals\cross-circle.svg" />
+    <Content Include="assets\src\svg\originals\cross.svg" />
+    <Content Include="assets\src\svg\originals\download.svg" />
+    <Content Include="assets\src\svg\originals\excel-file.svg" />
+    <Content Include="assets\src\svg\originals\filter.svg" />
+    <Content Include="assets\src\svg\originals\folder.svg" />
+    <Content Include="assets\src\svg\originals\info.svg" />
+    <Content Include="assets\src\svg\originals\line-chart.svg" />
+    <Content Include="assets\src\svg\originals\list.svg" />
+    <Content Include="assets\src\svg\originals\mail.svg" />
+    <Content Include="assets\src\svg\originals\menu.svg" />
+    <Content Include="assets\src\svg\originals\more.svg" />
+    <Content Include="assets\src\svg\originals\new-window.svg" />
+    <Content Include="assets\src\svg\originals\pdf.svg" />
+    <Content Include="assets\src\svg\originals\performance.svg" />
+    <Content Include="assets\src\svg\originals\search.svg" />
+    <Content Include="assets\src\svg\originals\settings-filled.svg" />
+    <Content Include="assets\src\svg\originals\settings.svg" />
+    <Content Include="assets\src\svg\originals\tick.svg" />
+    <Content Include="assets\src\svg\originals\user-circle.svg" />
+    <Content Include="assets\src\svg\originals\warning.svg" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_Contact.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_CookiesMessage.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_Disclaimer.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_FundDetails.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_FundsList.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_JSTemplate.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_MainFooter.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_ServerVariables.ascx" />
+    <Content Include="ControlTemplates\SP2k13Moderne\UC_ShortcutTopLinks.ascx" />
+    <Content Include="DelegateControls\Elements.xml" />
+    <Content Include="Features\WEB_DELEGATECONTROLS\WEB_DELEGATECONTROLS.Template.xml">
+      <DependentUpon>WEB_DELEGATECONTROLS.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SITE_WEBPARTS\SITE_WEBPARTS.Template.xml">
+      <DependentUpon>SITE_WEBPARTS.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SITE_LAYOUTS\SITE_LAYOUTS.Template.xml">
+      <DependentUpon>SITE_LAYOUTS.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SITE_FONTS\SITE_FONTS.Template.xml">
+      <DependentUpon>SITE_FONTS.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SITE_CSS\SITE_CSS.Template.xml">
+      <DependentUpon>SITE_CSS.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SITE_IMAGES\SITE_IMAGES.Template.xml">
+      <DependentUpon>SITE_IMAGES.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SITE_JS\SITE_JS.Template.xml">
+      <DependentUpon>SITE_JS.feature</DependentUpon>
+    </Content>
+    <Content Include="gulpfile.js" />
+    <TypeScriptCompile Include="assets\src\js\models\disclaimer-market.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\disclaimer-profile.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\disclaimer.ts" />
+    <TypeScriptCompile Include="assets\src\js\utils.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SP2k13Moderne_Core\SP2k13Moderne_Core.csproj">
+      <Project>{f26a2917-98a6-4a29-9ae5-9e09ca5c09f0}</Project>
+      <Name>SP2k13Moderne_Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="assets\src\js\common.ts" />
+    <TypeScriptCompile Include="assets\src\js\contact.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\document.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\fund.ts" />
+    <TypeScriptCompile Include="assets\src\js\SP2k13Moderneconstants.ts" />
+    <TypeScriptCompile Include="assets\src\js\disclaimer.ts" />
+    <TypeScriptCompile Include="assets\src\js\funds_list.ts" />
+    <TypeScriptCompile Include="assets\src\js\fund_details.ts" />
+    <TypeScriptCompile Include="assets\src\js\index.d.ts" />
+    <TypeScriptCompile Include="assets\src\js\main.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\manager.ts" />
+    <TypeScriptCompile Include="assets\src\js\models\market.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SP2k13Moderne.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SP2k13Moderne.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PostBuildEvent>"%25ProgramFiles%25\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\gacutil.exe" -i $(SolutionDir)\SP2k13Moderne\$(OutDir)\SP2k13Moderne.dll
+
+"%25ProgramFiles%25\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\gacutil.exe" -i $(SolutionDir)\SP2k13Moderne_Core\$(OutDir)\SP2k13Moderne_Core.dll
+iisreset
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

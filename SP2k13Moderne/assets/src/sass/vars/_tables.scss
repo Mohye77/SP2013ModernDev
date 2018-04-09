@@ -1,0 +1,35 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+
+$table-cell-padding:            8px !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding:  5px !default;
+
+//** Default background color used for all tables.
+$table-bg:                      #fff !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #f9f9f9 !default;
+//** Background color used for `.table-hover`.
+$table-bg-hover:                #edf1f4 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+//** Border color for table and cell borders.
+$table-border-color:            #f4f4f4 !default;
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+$table-font-size: 					$font-size-base !default;
+
+
+$funds-list-table-color: 						$brand-primary !default;
+$funds-list-table-th-bg: 						$gray-lighter !default;
+$funds-list-table-opened-bg: 					$table-bg-hover !default;
+$funds-list-table-opened-hover-bg: 				darken($table-bg-hover, 5%) !default;
+$funds-list-table-expand-bg: 					$gray-lighter !default;
+$funds-list-table-expand-w: 					35px !default;
+$funds-list-table-opened-expand-bg: 			$brand-primary !default;
+$funds-list-table-opened-expand-color: 			$white !default;
+$funds-list-table-name-font-size: 				$font-size-base !default;
+$funds-list-table-name-font-size-lg: 			$font-size-md !default;

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="IFS.WebParts.WP_Contact, IFS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4bb36518cdb605fa" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">IFS - WP_Contact</property>
+        <property name="Description" type="string"></property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

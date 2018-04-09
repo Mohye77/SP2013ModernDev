@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Ajoute les DELEGATE CONTROLS spécifiques à IFS" Id="d5c050c8-f68c-4807-b178-e4cf67818e5c" Scope="Web" Title="IFS : Deploy DELEGATE CONTROLS">
+  <ActivationDependencies>
+    <ActivationDependency FeatureDescription="Ajoute les LAYOUTS &amp; MASTERPAGES spécifiques à IFS dans le catalogue des masterpages" FeatureId="d01b3f60-373e-4de3-9131-3f3c25739a45" FeatureTitle="IFS : Deploy LAYOUTS &amp; MASTERPAGES" />
+  </ActivationDependencies>
+  <ElementManifests>
+    <ElementManifest Location="DelegateControls\Elements.xml" />
+  </ElementManifests>
+</Feature>

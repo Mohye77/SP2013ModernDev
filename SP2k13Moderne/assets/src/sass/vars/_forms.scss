@@ -1,0 +1,78 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+$input-bg:                       $white !default;
+//** `<input disabled>` background color
+$input-bg-disabled:              $gray-lighter !default;
+//** `<input readonly>` background color
+$input-bg-readonly: 			 $input-bg-disabled !default;
+
+//** Text color for `<input>`s
+$input-color:                    $black !default;
+//** `<input>` border color
+$input-border:                   $gray-lighter !default;
+$input-border-width:             1px !default;
+
+// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+$input-border-radius:            $border-radius-base !default;
+//** Large `.form-control` border radius
+$input-border-radius-large:      $border-radius-large !default;
+//** Small `.form-control` border radius
+$input-border-radius-small:      $border-radius-small !default;
+
+//** Border color for inputs on focus
+$input-border-focus:             $gray !default;
+
+//** Placeholder text color
+$input-color-placeholder:        $gray-light !default;
+
+
+$input-padding-horizontal:   	10px !default;
+
+//** Default `.form-control` height
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + ($btn-border-width * 2)) !default;
+//** Large `.form-control` height
+$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + ($btn-border-width * 2)) !default;
+//** Small `.form-control` height
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + ($btn-border-width * 2)) !default;
+
+
+$input-font-size: 				$font-size-base !default;
+$input-font-size-md: 			$font-size-md !default;
+$input-box-shadow: 				none !default;
+
+
+//** `.form-group` margin
+$form-group-margin-bottom:       20px !default;
+$form-group-margin-bottom-md:    40px !default;
+
+$legend-color:                   $gray-dark !default;
+$legend-border-color:            #e5e5e5 !default;
+
+//** Background color for textual input addons
+$input-group-addon-bg:           $gray-lighter !default;
+//** Border color for textual input addons
+$input-group-addon-border-color: $input-border !default;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+
+/**
+ * Forms
+ ******************************************/
+$radio-cb-color: 			$brand-primary !default;
+$radio-cb-size: 			12px !default;
+$radio-cb-checked-size: 	6px !default;

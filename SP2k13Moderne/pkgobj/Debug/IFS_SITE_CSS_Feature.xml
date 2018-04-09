@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Ajoute le CSS spécifique à IFS dans la style library" Id="faed890b-5b98-4d95-a763-36a0cbbe0872" Scope="Site" Title="IFS : Deploy CSS">
+  <ElementManifests>
+    <ElementManifest Location="css\Elements.xml" />
+    <ElementFile Location="css\compile.css" />
+    <ElementFile Location="css\compile.min.css" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="images" Path="images" Url="Style Library/IFS/images" RootWebOnly="TRUE">
+    <File Path="favicon\android-icon-144x144.png" Url="favicon/android-icon-144x144.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\android-icon-192x192.png" Url="favicon/android-icon-192x192.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\android-icon-36x36.png" Url="favicon/android-icon-36x36.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\android-icon-48x48.png" Url="favicon/android-icon-48x48.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\android-icon-72x72.png" Url="favicon/android-icon-72x72.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\android-icon-96x96.png" Url="favicon/android-icon-96x96.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-114x114.png" Url="favicon/apple-icon-114x114.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-120x120.png" Url="favicon/apple-icon-120x120.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-144x144.png" Url="favicon/apple-icon-144x144.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-152x152.png" Url="favicon/apple-icon-152x152.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-180x180.png" Url="favicon/apple-icon-180x180.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-57x57.png" Url="favicon/apple-icon-57x57.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-60x60.png" Url="favicon/apple-icon-60x60.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-72x72.png" Url="favicon/apple-icon-72x72.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-76x76.png" Url="favicon/apple-icon-76x76.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon-precomposed.png" Url="favicon/apple-icon-precomposed.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-icon.png" Url="favicon/apple-icon.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-114x114.png" Url="favicon/apple-touch-icon-114x114.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-120x120.png" Url="favicon/apple-touch-icon-120x120.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-144x144.png" Url="favicon/apple-touch-icon-144x144.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-152x152.png" Url="favicon/apple-touch-icon-152x152.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-180x180.png" Url="favicon/apple-touch-icon-180x180.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-57x57.png" Url="favicon/apple-touch-icon-57x57.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-60x60.png" Url="favicon/apple-touch-icon-60x60.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-72x72.png" Url="favicon/apple-touch-icon-72x72.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-76x76.png" Url="favicon/apple-touch-icon-76x76.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon-precomposed.png" Url="favicon/apple-touch-icon-precomposed.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\apple-touch-icon.png" Url="favicon/apple-touch-icon.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\browserconfig.xml" Url="favicon/browserconfig.xml" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon-160x160.png" Url="favicon/favicon-160x160.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon-16x16.png" Url="favicon/favicon-16x16.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon-192x192.png" Url="favicon/favicon-192x192.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon-32x32.png" Url="favicon/favicon-32x32.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon-96x96.png" Url="favicon/favicon-96x96.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon.ico" Url="favicon/favicon.ico" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\favicon.png" Url="favicon/favicon.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\ms-icon-144x144.png" Url="favicon/ms-icon-144x144.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\ms-icon-150x150.png" Url="favicon/ms-icon-150x150.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\ms-icon-310x310.png" Url="favicon/ms-icon-310x310.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\ms-icon-70x70.png" Url="favicon/ms-icon-70x70.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\mstile-144x144.png" Url="favicon/mstile-144x144.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\mstile-150x150.png" Url="favicon/mstile-150x150.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\mstile-310x150.png" Url="favicon/mstile-310x150.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\mstile-310x310.png" Url="favicon/mstile-310x310.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="favicon\mstile-70x70.png" Url="favicon/mstile-70x70.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\logo_edr_blue.png" Url="logos/logo_edr_blue.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\logo_edr_blue.svg" Url="logos/logo_edr_blue.svg" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\logo_edr_white.png" Url="logos/logo_edr_white.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\logo_edr_white.svg" Url="logos/logo_edr_white.svg" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\logo_standalone.png" Url="logos/logo_standalone.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\logo_standalone.svg" Url="logos/logo_standalone.svg" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\text_edr_blue.png" Url="logos/text_edr_blue.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\text_edr_blue.svg" Url="logos/text_edr_blue.svg" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\text_edr_white.png" Url="logos/text_edr_white.png" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="logos\text_edr_white.svg" Url="logos/text_edr_white.svg" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

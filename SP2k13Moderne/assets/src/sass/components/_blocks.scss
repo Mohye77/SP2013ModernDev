@@ -1,0 +1,60 @@
+/* =================================================================================== 
+ * File : blocks.scss
+ * Description : Generic blocks
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* CONTENT BLOCK */
+/* ============================================================= */
+.content-block
+{
+	background: $white;
+	margin: 0 0 $spacing;
+	padding: $content-block-padding;
+	//max-width: 100%;
+	//overflow: hidden;
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		padding: $content-block-padding-md;
+		margin: 0 0 30px;
+	}
+}
+
+
+/* ============================================================= */
+/* TAB PANE */
+/* ============================================================= */
+.tab-content
+{
+	
+}
+
+.tab-pane
+{
+	padding: $spacing 0 0;
+	display: none;
+
+	&.active 
+	{
+		display: block;
+	}
+
+	&.loaded
+	{
+		.loader { display: none; }
+	}
+}
+
+/* ============================================================= */
+/* HIGHCHART */
+/* ============================================================= */
+.highchart-wrapper
+{
+	
+}

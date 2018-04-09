@@ -1,0 +1,33 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+//== Labels
+//
+//##
+
+//** Default label background color
+$label-default-bg:            $gray-light !default;
+//** Primary label background color
+$label-primary-bg:            $brand-primary !default;
+//** Success label background color
+$label-success-bg:            $brand-success !default;
+//** Info label background color
+$label-info-bg:               $brand-info !default;
+//** Warning label background color
+$label-warning-bg:            $brand-warning !default;
+//** Danger label background color
+$label-danger-bg:             $brand-danger !default;
+
+//** Default label text color
+$label-color:                 $white !default;
+//** Default text color of a linked label
+$label-link-hover-color:      $white !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+$label-font-size: 			$font-size-base !default;
+$label-padding: 			.3em .5em !default;
+
+

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Ajoute les LAYOUTS &amp; MASTERPAGES spécifiques à IFS dans le catalogue des masterpages" Id="d01b3f60-373e-4de3-9131-3f3c25739a45" Scope="Site" Title="IFS : Deploy LAYOUTS &amp; MASTERPAGES">
+  <ElementManifests>
+    <ElementManifest Location="layouts\Elements.xml" />
+    <ElementFile Location="layouts\lyt-one-wp-zone.aspx" />
+    <ElementManifest Location="masterpages\Elements.xml" />
+    <ElementFile Location="masterpages\IFS-default.master" />
+    <ElementFile Location="masterpages\IFS-default.min.master" />
+  </ElementManifests>
+</Feature>

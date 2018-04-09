@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="images\" Type="ElementManifest" />
+    <ProjectItemFile Source="favicon\favicon.ico" Target="images\favicon\" Type="ElementFile" />
+    <ProjectItemFile Source="logos\siteIcon.png" Target="images\logos\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

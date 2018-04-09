@@ -1,0 +1,292 @@
+﻿.table
+{
+	margin: 0 0 $spacing-md;
+	font-size: $table-font-size;
+	text-align: center;
+
+	td, th
+	{
+		@include border($table-border-color);
+	}
+
+	th
+	{
+		
+	}
+
+	.text-right
+	{
+		text-align: right;
+	}
+
+
+	thead
+	{
+		th
+		{
+			text-align: center;
+		}
+	}
+
+	tbody
+	{
+		th
+		{
+			text-align: right;
+		}
+
+		.row-collapsed:not(.fund-main-part):not(.fund-title),
+		.row-hidden
+		{
+			display: none !important;
+		}
+
+		.val
+		{
+			@include text-medium;
+			color: $brand-primary;
+			white-space: nowrap;
+
+			&:empty:before { content: '-'; }
+		}
+
+		.no-result td {
+			padding: $padding-large-vertical $padding-large-horizontal;
+		}
+		
+	}
+}
+
+#master .funds-list-table
+{
+	color: $funds-list-table-color;
+
+	th, td
+	{
+		vertical-align: middle;
+	}
+
+	.info
+	{
+		@include text-normal;
+		color: $gray-light;
+		display: block;
+		font-size: $table-font-size - 1px;
+	}
+
+	.col-expand
+	{
+		background: $funds-list-table-expand-bg;
+		border-left: 0;
+		text-align: center;
+		width: $funds-list-table-expand-w;
+	}
+
+
+	.col-name,
+	.col-isin,
+	.col-vl,
+	.col-yearly-perf
+	{
+		text-align: left;
+	}
+
+	.col-volatility,
+	.col-assets
+	{
+		display: none;
+	}
+
+	thead
+	{
+		th
+		{
+			@include text-medium;
+			background: $funds-list-table-th-bg;
+			border-bottom-width: 1px;
+		}
+	}
+
+	tbody
+	{
+		a
+		{
+			display: inline-block;
+			padding: 10px 0;
+
+			&:hover,
+			&:focus
+			{
+				text-decoration: none;
+			}
+		}
+
+		.fund-title
+		{
+			.col-name
+			{
+				position: relative;
+			}
+
+			i
+			{
+				display: none;
+				position: absolute;
+				@include pos-center-y;
+				right: 10px;
+			}
+		}
+
+		.col-expand i,
+		.col-name span,
+		.col-details span { display: none; }
+
+		.col-name
+		{
+			@include text-medium;
+			color: $text-color;
+			font-size: $funds-list-table-name-font-size;
+		}
+
+		
+
+		.col-isin
+		{
+			color: $text-color;
+		}
+
+		.col-access,
+		.col-details
+		{
+			padding: 0;
+		}
+
+		.col-details
+		{
+			a { display: block; }
+		}
+		
+		.col-access
+		{
+			white-space: nowrap;
+
+			a
+			{
+				opacity: .6;
+				
+				&:before
+				{
+					font-size: 22px;
+				}
+
+				&:hover,
+				&:focus
+				{
+					opacity: 1;
+				}
+
+				&[data-enabled=False]{
+					cursor: not-allowed;
+					opacity: .1;
+					pointer-events: none;
+				}
+			}
+
+			.icon-bar-chart,
+			.icon-line-chart,
+			.icon-list
+			{
+				display: none;		
+			}
+		}
+
+		.fund-main-part 
+		{
+			&.expandable-group
+			{
+				.col-expand i { display: block; }
+			} 
+
+			.col-name span { display: block; }
+		}
+
+
+		.expandable-group
+		{
+			td:not(.col-access):not(.col-details)
+			{
+				cursor: pointer;
+			}
+
+			.col-name
+			{
+				i { display: inline-block; }
+			}
+		} 
+
+		.group-opened
+		{
+			td
+			{
+				background: $funds-list-table-opened-bg;
+			}
+
+			&:hover
+			{
+				td:not(.col-expand) { background: $funds-list-table-opened-hover-bg; }
+			}
+
+			.col-name
+			{
+				i { transform: rotate(-180deg) translateY(50%); }
+			}
+
+			.col-expand
+			{
+				background: $funds-list-table-opened-expand-bg;
+				border-bottom-color: $funds-list-table-opened-expand-bg;
+				color: $funds-list-table-opened-expand-color;
+
+				i { transform: rotate(-180deg); }
+			}	
+		}
+		
+	}
+
+	@include lg-desktop
+	{
+		tbody
+		{
+			.col-name
+			{
+				font-size: $funds-list-table-name-font-size-lg;
+			}
+		}
+	}
+
+	@media (min-width: 1400px)
+	{
+		.col-volatility,
+		.col-assets
+		{
+			display: table-cell;
+		}
+	}
+
+	@media (min-width: 1500px)
+	{
+		tbody
+		{
+			.col-access
+			{
+				a { padding: 10px 5px; }
+				.icon-bar-chart,
+				.icon-line-chart,
+				.icon-list
+				{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

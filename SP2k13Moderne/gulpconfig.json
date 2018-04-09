@@ -1,0 +1,12 @@
+﻿{
+  "spCredentials": {
+    "username": "gulpagent",
+    "password": "password",
+    "domain": "domain"
+  },
+  "spStyleLibrary": "style library/SP2k13Moderne",
+  "spTemplates": "_catalogs/masterpage/SP2k13Moderne",
+  "spPortalUrl": "http://portal",
+  "spWebpartsPath": "C:/Program Files/Common Files/microsoft shared/Web Server Extensions/15/TEMPLATE/CONTROLTEMPLATES/SP2k13Moderne",
+  "spAssemblyName":  "SP2k13Moderne, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4bb36518cdb605fa"
+}

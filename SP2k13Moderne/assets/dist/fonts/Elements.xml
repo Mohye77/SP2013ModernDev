@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="fonts" Path="fonts" Url="Style Library/SP2k13Moderne/fonts" RootWebOnly="TRUE">
+    <File Path="SwiftNeue-Book.woff2" Url="SwiftNeue-Book.woff2" Type="GhostableInLibrary" Level="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="SwiftNeue-Book.eot" Url="SwiftNeue-Book.eot" Type="GhostableInLibrary" Level="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="SwiftNeue-Book.otf" Url="SwiftNeue-Book.otf" Type="GhostableInLibrary" Level="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="SwiftNeue-Book.svg" Url="SwiftNeue-Book.svg" Type="GhostableInLibrary" Level="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="SwiftNeue-Book.ttf" Url="SwiftNeue-Book.ttf" Type="GhostableInLibrary" Level="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="SwiftNeue-Book.woff" Url="SwiftNeue-Book.woff" Type="GhostableInLibrary" Level="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

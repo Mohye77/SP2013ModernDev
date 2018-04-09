@@ -1,0 +1,72 @@
+/* ============================================================= */
+/* BOOTSTRAP VARS */
+/* ============================================================= */
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                $fw-normal !default;
+$btn-border-width: 				 0 !default;
+
+$btn-default-color:              $white !default;
+$btn-default-bg:                 $gray !default;
+$btn-default-border:             $gray !default;
+
+$btn-default-hover-color:        $white !default;
+$btn-default-hover-bg:           $gray-darker !default;
+$btn-default-hover-border:       $gray-darker !default;
+
+$btn-revert-color:               $gray !default;
+$btn-revert-bg:                  transparent !default;
+$btn-revert-border:              $gray !default;
+
+$btn-revert-hover-color:         $white !default;
+$btn-revert-hover-bg:            $gray !default;
+$btn-revert-hover-border:        $gray !default;
+
+$btn-primary-color:              $white !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $brand-primary !default;
+
+$btn-primary-hover-color:        $white !default;
+$btn-primary-hover-bg:           darken($brand-primary, 5%) !default;
+$btn-primary-hover-border:       darken($brand-primary, 5%) !default;
+
+$btn-success-color:              $white !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                 $white !default;
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              $white !default;
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               $white !default;
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-link-disabled-color:        $gray-light !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;
+
+
+/* ============================================================= */
+/* CUSTOM VARS */
+/* ============================================================= */
+
+$btn-font-size: 				$font-size-base !default;
+$btn-padding: 					12px 20px !default;
+$btn-transform:     			uppercase !default;
+$btn-min-width: 				150px !default;
+$btn-transition: 				all $transition-speed !default;
+
+$btn-icon-size: 		 		$icon-size !default;
+$btn-icon-padding: 				$btn-icon-size + 20px !default;
+$btn-icon-padding-sm: 			$btn-icon-size + 10px !default;

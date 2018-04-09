@@ -1,0 +1,446 @@
+/* =================================================================================== 
+ * File : header.scss
+ * Description : Header styles
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* TOP HEADER / SHORTCUTS */
+/* ============================================================= */
+#top-header
+{
+	background: $top-header-bg;
+	color: $top-header-color;
+	font-size: $top-header-font-size;
+	padding: $top-header-padding;
+	
+	> ul
+	{
+		@include reset-list;
+		display: flex;
+		justify-content: flex-end;
+		border-right: 1px solid $top-header-color;
+
+		> li 
+		{
+			border-left: 1px solid $top-header-color;
+
+			> * { height: 100%; }
+		}
+	}
+
+	.top-header-btn
+	{
+		display: inline-block;
+		height: 100%;
+		padding: $top-header-btn-padding;
+
+		&:hover,
+		&:focus
+		{
+			background: $top-header-btn-bg-hover;
+			color: $top-header-btn-color-hover;
+			text-decoration: none;
+		}
+
+		strong
+		{
+			@include text-normal;
+			color: $white;
+		}
+	}
+
+	.open .top-header-btn
+	{
+		background: $top-header-btn-bg-hover;
+		color: $top-header-btn-color-hover;
+	}
+
+	.dropdown-menu
+	{
+		background: $top-header-dropdown-bg;
+		border: 0;
+		color: $top-header-dropdown-color;
+		font-size: $top-header-font-size;
+		margin: 0;
+		padding: 0;
+
+		> li
+		{
+			> a
+			{
+				color: $top-header-dropdown-color;
+				padding: 10px;
+
+
+				&:hover,
+				&:focus
+				{
+					background: 0;
+					color: $top-header-btn-color-hover;
+				}
+			}
+		}
+	}
+
+	.switch-profile
+	{
+		i { color: $white; }
+
+		.dropdown-menu
+		{
+			padding: $spacing;
+			text-align: center;
+			min-width: 240px;
+
+			p
+			{
+				font-size: $font-size-base;
+				text-align: left;
+
+				span { color: $white; }
+			}
+
+			button
+			{
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.switch-language
+	{
+		.top-header-btn { text-transform: uppercase; }
+		
+		button.top-header-btn
+		{
+			&:after
+			{
+				@include triangle-r(4px, 8px, $white);
+				margin-left: $spacing-xs;
+			}
+		}
+
+		.open .top-header-btn
+		{
+			
+			&:after
+			{
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
+
+
+
+/* ============================================================= */
+/* STRUCTURE */
+/* ============================================================= */
+#header
+{
+	@include border-bottom;
+	background: $header-bg;
+	flex-shrink: 0;
+	flex-grow: 0;
+	position: relative;
+	z-index: $zindex-header;
+
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+	}	
+}
+
+/* ============================================================= */
+/* LOGO */
+/* ============================================================= */
+#header-logo
+{
+	@include border-bottom;
+	display: flex;
+	align-items: center;
+
+
+	a
+	{
+		display: block;
+		padding: $header-logo-padding;
+		
+		img { width: $header-logo-w }
+	}
+
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+		border-bottom: 0;
+		@include border-right;
+
+		a
+		{
+			padding: $spacing;
+		}
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		a 
+		{
+			padding: $header-logo-padding-md;
+			width: $sidebar-w;
+		}
+	}
+
+}
+
+/* ============================================================= */
+/* CONTENT */
+/* ============================================================= */
+#header-content
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	height: 100%;
+	
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 1;
+	}
+}
+
+/* ============================================================= */
+/* TITLE */
+/* ============================================================= */
+#header-title
+{
+	padding: $header-title-padding;
+
+	p
+	{
+		margin: 5px 0 0;
+	}
+
+	.part-name,
+	.funds-parts-switch button
+	{
+		color: $brand-primary;
+		display: inline-block;
+		padding: 5px 15px 5px 0;
+	}
+
+	.funds-parts-switch
+	{		
+		button
+		{
+			vertical-align: middle;
+			position: relative;
+
+			&:after
+			{
+				@include triangle-b(8px, 4px, $brand-primary);
+				@include pos-abs($right: 0);
+				@include pos-center-y;
+			}
+		}
+		
+		.dropdown-menu
+		{
+		}
+
+		.name
+		{
+			color: $gray-light;
+		}
+		
+		.isin
+		{
+			color: $brand-primary;
+		}
+		
+		&.open
+		{
+			button:after
+			{
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		padding: $header-title-padding-md;
+	}
+}
+
+/* ============================================================= */
+/* ACTIONS */
+/* ============================================================= */
+#header-actions
+{
+	display: flex;
+	height: $header-actions-btn-h;
+
+	button
+	{
+		color: $header-actions-btn-color;
+		height: 100%;
+		width: $header-actions-btn-w;
+		position: relative;
+
+		&:hover,
+		&:focus
+		{
+			color: $header-actions-btn-hover-color;
+		}
+
+		&:before
+		{
+			font-size: $header-actions-btn-icon-size;
+		}
+
+		&.opened
+		{
+			background: $header-actions-btn-active-bg;
+			color: $header-actions-btn-active-color;
+
+			&:before { @include icon-cross; } 
+
+			.nb-active-filters { display: none; }
+		}
+	}
+
+	.nb-active-filters
+	{
+		background: #ffc72c;
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+		position: absolute;
+		@include pos-center;
+		@include square(20px);
+		margin: -10px 0 0 12px;
+		border-radius: 50%;
+		display: inline-block;
+		color: $gray;
+		font-size: $font-size-xs;
+		line-height: 20px;
+		text-align: center;
+	}
+	
+
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+		height: $header-actions-btn-h-sm;
+		button
+		{
+			width: $header-actions-btn-w-sm;
+		}
+	}	
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		display: none;
+	}	
+}
+
+/* ============================================================= */
+/* ACTIONS */
+/* ============================================================= */
+#header-search
+{
+	display: none;
+	flex: 1;
+	z-index: 2;
+
+	.search-opened &
+	{
+		display: block;
+	}
+
+	.form-group
+	{
+		margin: $spacing;
+		position: relative;
+	}
+
+	.form-control
+	{
+		height: 45px;
+	}
+
+	/**
+	 * Until Tablet
+	 ******************************************/
+	@include tablet-max
+	{
+		background: $header-search-bg;
+		@include pos-abs(null, 0, 0, 0);
+		transform: translateY(100%);
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		display: block;
+	}	
+}
+
+#btn-reset-search
+{
+	@include pos-abs(0, 0, 0);
+	padding: 0 $spacing-xs;
+	z-index: 2;
+
+	&:not(.active)
+	{
+		cursor: default;
+		pointer-events: none;
+
+		&:before { @include icon-search; }
+	}
+}
+
+
+/* ============================================================= */
+/* TABS */
+/* ============================================================= */
+#header-tabs
+{
+	@include pos-abs($left: $sidebar-w, $bottom: 0);
+	padding: $header-title-padding-md;
+
+}

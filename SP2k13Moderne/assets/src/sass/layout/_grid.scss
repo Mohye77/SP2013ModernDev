@@ -1,0 +1,212 @@
+/* =================================================================================== 
+ * File : grid.scss
+ * Description : Bootstrap grid extensions
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* GRID SIZE FUNCTIONS / MIXINS */
+/* ============================================================= */
+
+/**
+ * Get col width in %
+ ******************************************/
+@function get-grid-col-width($nb-cols)
+{
+	@return percentage(($nb-cols / $grid-columns));
+}
+
+
+/**
+ * Set property size in %
+ ******************************************/
+@mixin grid-col-pc($prop: width, $nb-cols: 1, $gutter: $grid-col-padding)
+{
+	$pc-value: get-grid-col-width($nb-cols);
+	
+	@if $gutter > 0
+	{
+		@include padding-h($gutter);
+	}
+
+	#{$prop}: $pc-value;
+}
+
+/**
+ * Set property size in px
+ ******************************************/
+/* XS Screen */
+@mixin grid-col-px-xs($prop: width, $nb-cols: 1, $gutter: false, $diff: 0)
+{
+	$pc-value: get-grid-col-width($nb-cols);
+	$px-value: ($container-xs * $pc-value/100%);
+
+	$value: $px-value; 
+
+	@if $gutter { $value: ($value - $grid-gutter-width); }
+	@if $diff > 0 { $value: ($value - $diff); }
+	
+	#{$prop}: $value;
+}
+
+/* SM Screen */
+@mixin grid-col-px-sm($prop: width, $nb-cols: 1, $gutter: false, $diff: 0)
+{
+	$pc-value: get-grid-col-width($nb-cols);
+	$px-value: ($container-sm * $pc-value/100%);
+
+	$value: $px-value; 
+
+	@if $gutter { $value: ($value - $grid-gutter-width); }
+	@if $diff > 0 { $value: ($value - $diff); }
+	
+	#{$prop}: $value;
+}
+
+/* MD Screen */
+@mixin grid-col-px-md($prop: width, $nb-cols: 1, $gutter: false, $diff: 0)
+{
+	$pc-value: get-grid-col-width($nb-cols);
+	$px-value: ($container-md * $pc-value/100%);
+
+	$value: $px-value; 
+
+	@if $gutter { $value: ($value - $grid-gutter-width); }
+	@if $diff > 0 { $value: ($value - $diff); }
+	
+	#{$prop}: $value;
+}
+
+/* LG Screen */
+@mixin grid-col-px-lg($prop: width, $nb-cols: 1, $gutter: false, $diff: 0)
+{
+	$pc-value: get-grid-col-width($nb-cols);
+	$px-value: ($container-lg * $pc-value/100%);
+
+	$value: $px-value; 
+
+	@if $gutter { $value: ($value - $grid-gutter-width); }
+	@if $diff > 0 { $value: ($value - $diff); }
+	
+	#{$prop}: $value;
+}
+
+
+/* ============================================================= */
+/* LAYOUT DISPLAY */
+/* ============================================================= */
+.inline-block-cols
+{
+	@include tablet
+	{
+		font-size: 0;
+		/*.inline-block-spacing;*/
+
+		[class^="col-"],
+		[class*=" col-"]
+		{
+			/*.inline-block-spacing(0);*/
+			display: inline-block;
+			float: none;
+			font-size: $font-size-base;
+			vertical-align: top;
+		}
+	}
+}
+
+@mixin inline-block-spacing($spacing: -4px)
+{
+	letter-spacing: $spacing;
+    word-spacing: $spacing;
+}
+
+.inline-block-spacing { @include inline-block-spacing; }
+
+
+.col-centered
+{
+	float: none;
+	@include margin-h(auto);
+}
+
+.flex-row,
+.flex-col
+{
+	display: flex;
+
+	&-sm
+	{
+		@include tablet
+		{
+			display: flex;
+		}
+	}
+
+	&-md
+	{
+		@include desktop
+		{
+			display: flex;
+		}
+	}
+}
+
+.flex-col
+{
+	flex-direction: column;
+}
+
+/**
+ * Collapsed columns
+ ******************************************/
+.col-collapsed
+{
+	//.row { @include margin-h(0); }
+
+	[class^="col-"],
+	[class*=" col-"] { @include padding-h(0); }
+}
+
+.col-collapsed-cancel
+{
+	//.row { @include margin-h(-$grid-col-padding); }
+
+	[class^="col-"],
+	[class*=" col-"] { @include padding-h($grid-col-padding); }
+}
+
+/**
+ * Table cells
+ ******************************************/
+.display-table-cell
+{
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+		.row
+		{
+			display: table;
+			margin: 0;
+		}
+
+		[class^="col-"],
+		[class*=" col-"]
+		{
+			display: table-cell;
+			float: none;
+			@include padding-h(0);
+			vertical-align: top;
+		}
+	}
+}
+
+
+.container-fluid .container,
+.container .container-fluid
+{
+	padding: 0;
+	width: auto;
+}

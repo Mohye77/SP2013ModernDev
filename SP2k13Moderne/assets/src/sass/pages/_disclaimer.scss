@@ -1,0 +1,297 @@
+/* =================================================================================== 
+ * File : disclaimer.scss
+ * Description : Disclaimer page
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+#disclaimer-container
+{
+	background: $disclaimer-bg;
+	@include pos-fixed(0,0,0,0);
+	overflow: auto;
+	z-index: $zindex-disclaimer;
+
+	.disclaimer-hidden &
+	{
+		display: none;
+	}
+
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+		padding: $spacing;
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+#disclaimer-content
+{
+	flex: 1;
+	max-width: $screen-lg;
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		max-height: calc(75vh - #{$spacing * 2});
+
+	}
+}
+
+.disclaimer-block
+{
+	background: $disclaimer-block-bg;
+	
+	
+	+ .disclaimer-block
+	{
+		margin-top: $spacing;
+	}
+
+	&-inner
+	{
+		padding: $disclaimer-block-padding;
+	}
+	
+	/**
+	* Desktop
+	******************************************/
+	@include desktop
+	{
+		+ .disclaimer-block
+		{
+			margin-top: 0;
+			margin-left: $spacing-md;
+		}
+
+		&-inner
+		{
+			padding: $disclaimer-block-padding-md;
+		}
+	}
+}
+
+
+#disclaimer-logo
+{
+	margin: 0 0 $spacing;
+	text-align: center;
+
+	a
+	{
+		display: inline-block;
+		img { width: $header-logo-w }
+	}
+
+	/**
+	* Desktop
+	******************************************/
+	@include desktop
+	{
+		margin: 0 0 $spacing-md;
+	}
+}
+
+/* ============================================================= */
+/* PROFILE */
+/* ============================================================= */
+#disclaimer-profile
+{
+	
+	/**
+	* Desktop
+	******************************************/
+	@include desktop
+	{
+		max-width: 480px;
+		
+	}
+}
+
+#disclaimer-selection
+{
+	margin: $spacing 0 0;
+	
+	.dropdown
+	{
+		+ .dropdown
+		{
+			margin: $spacing 0 0;
+		}
+	}
+
+	.btn
+	{
+		justify-content: flex-start;
+		text-transform: none;
+		width: 100%;
+
+		&:after
+		{
+			@extend .icon:before;
+			@include icon-arrow-down;
+			position: absolute;
+			right: $spacing-xs;
+			@include pos-center-y;
+		}
+	}
+
+	.open
+	{
+		.btn
+		{
+			&:after
+			{
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+
+	.dropdown-menu
+	{
+		max-height: 26px * 5 + 10px;
+		overflow: auto; 
+		width: 100%;
+	}
+
+	/**
+	 * Tablet
+	 ******************************************/
+	@include tablet
+	{
+		display: flex;
+
+		.dropdown
+		{
+			flex: 1;
+
+			+ .dropdown
+			{
+				margin: 0 0 0 $spacing;
+			}
+		}
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		margin-top: $spacing-md;
+		
+	}
+}
+	
+
+
+#disclaimer-profile-selector
+{
+	.country-not-selected & { visibility: hidden; }
+}
+
+
+/* ============================================================= */
+/* TERMS AND CONDITIONS */
+/* ============================================================= */
+#disclaimer-conditions
+{
+	display: none;
+	flex: 1;
+
+	&.text-loaded
+	{
+		display: block;
+	}
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		
+		flex-direction: column;
+
+		&.text-loaded
+		{
+			display: flex;
+		}
+	}
+}
+
+/* ============================================================= */
+/* TEXT */
+/* ============================================================= */
+#disclaimer-text
+{
+	background: $disclaimer-text-bg;
+
+	/**
+	 * Desktop
+	 ******************************************/
+	@include desktop
+	{
+		flex: 1;
+		overflow: auto;
+	}
+}
+
+#disclaimer-footer
+{
+	color: $gray;
+	font-size: $font-size-xs;
+}
+
+.disclaimer-formatted-text
+{
+	p
+	{
+		background: 0 !important;
+		color: inherit !important;
+		font-family: inherit !important;
+		font-size: inherit !important;
+	}
+}
+
+/* ============================================================= */
+/* BUTTONS */
+/* ============================================================= */
+#disclaimer-btn
+{
+	background: $disclaimer-block-bg;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	.checkbox
+	{
+		margin: 0;
+	}
+
+	.btn
+	{
+		margin: 0 0 0 $spacing;
+	}
+
+	/**
+	  * Tablet
+	  ******************************************/
+	@include tablet
+	{
+		
+	}
+}

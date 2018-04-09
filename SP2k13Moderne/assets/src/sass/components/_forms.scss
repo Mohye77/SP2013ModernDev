@@ -1,0 +1,159 @@
+/* =================================================================================== 
+ * File : forms.scss
+ * Description : Forms styles
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+/* ============================================================= */
+/* ELEMENTS */
+/* ============================================================= */
+fieldset
+{
+
+}
+
+legend
+{
+	font-family: $headings-font-family;
+	border: 0;
+}
+
+/* ============================================================= */
+/* FIELDS / CONTROLS */
+/* ============================================================= */
+/**
+ * Bootstrap form control
+ ******************************************/
+.form-control
+{
+	box-shadow: $input-box-shadow;
+	
+	&:focus
+	{
+		box-shadow: $input-box-shadow;
+	}
+
+	&::-ms-clear
+	{
+		display: none;
+	}
+}
+
+// Fucking Sharepoint override
+input.form-control
+{
+	border-color: $input-border;
+	padding: $input-padding-horizontal $padding-base-horizontal;
+
+	&:hover,
+	&:focus
+	{
+		border-color: $input-border-focus;
+	}
+}
+
+/**
+ * Custom radio / checkbox
+ ******************************************/
+.radio + .radio,
+.checkbox + .checkbox
+{
+	margin-top: 0;
+}
+
+.checkbox,
+.radio
+{
+	margin: 0 0 15px;
+
+	label
+	{
+		padding-left: $radio-cb-size + $spacing-xs;
+		position: relative;
+		min-height: auto;
+	}
+
+	input
+	{
+		display: none;
+
+		&:checked + .custom-form-control:before
+		{
+    		display: inline-block;
+		}
+	}
+
+	.custom-form-control
+	{
+		@include border($radio-cb-color);
+		@include pos-abs(2px, null, null, 0);
+		@include square($radio-cb-size);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		&:before
+		{
+			content: '';
+			display: none;
+			@include square($radio-cb-checked-size);
+			background: $radio-cb-color;
+		}
+	}
+
+	
+}
+
+.radio
+{
+	.custom-form-control,
+	.custom-form-control:before
+	{
+		border-radius: 50%;
+	}
+}
+
+
+.checkboxes-inline .checkbox,
+.radios-inline .radio
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: $spacing-xs;
+}
+
+.checkboxes-inline .checkbox,
+.radios-inline .radio
+{
+	margin-right: $spacing;
+}
+
+
+/* ============================================================= */
+/* BUTTONS */
+/* ============================================================= */
+.form-btn
+{
+	margin: $spacing 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.checkbox
+	{
+		margin: 0;
+	}
+
+	.btn
+	{
+		margin: 0 0 0 $spacing;
+	}
+
+	/**
+	  * Tablet
+	  ******************************************/
+	@include tablet
+	{
+		justify-content: flex-end;
+	}
+}

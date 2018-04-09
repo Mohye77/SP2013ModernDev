@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="masterpages" Path="masterpages" RootWebOnly="FALSE" Url="_catalogs/masterpage/SP2k13Moderne">
+    <File Path="SP2k13Moderne-default.master" Url="SP2k13Moderne-default.master" Type="GhostableInLibrary" ReplaceContent="true" >
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="ContentTypeId" Value="0x010105" />
+      <Property Name="Title" Value="SP2k13Moderne - Default"/>
+      <Property Name="Comments" Value="Masterpage SP2k13Moderne"/>
+    </File>
+  </Module>
+</Elements>

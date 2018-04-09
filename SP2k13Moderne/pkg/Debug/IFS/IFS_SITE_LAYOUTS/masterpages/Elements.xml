@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="masterpages" Path="masterpages" RootWebOnly="FALSE" Url="_catalogs/masterpage/IFS">
+    <File Path="IFS-default.master" Url="IFS-default.master" Type="GhostableInLibrary" ReplaceContent="true" >
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="ContentTypeId" Value="0x010105" />
+      <Property Name="Title" Value="IFS - Default"/>
+      <Property Name="Comments" Value="Masterpage IFS"/>
+    </File>
+    <File Path="IFS-default.min.master" Url="masterpages/IFS-default.min.master" Type="GhostableInLibrary" ReplaceContent="true" >
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="ContentTypeId" Value="0x010105" />
+      <Property Name="Title" Value="IFS - Default - Minified"/>
+      <Property Name="Comments" Value="Masterpage IFS with assets minified"/>
+    </File>
+  </Module>
+</Elements>

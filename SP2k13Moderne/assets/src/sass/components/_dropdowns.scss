@@ -1,0 +1,17 @@
+/* =================================================================================== 
+ * File : dropdowns.scss
+ * Description : Bootstrap's dropdown extension
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+.dropdown-menu
+{
+	box-shadow: $dropdown-box-shadow;
+	margin: -1px 0 0;
+
+	> li > a
+	{
+		@include padding-v(5px)	
+	}
+}

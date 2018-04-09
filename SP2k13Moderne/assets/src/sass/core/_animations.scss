@@ -1,0 +1,123 @@
+/* =================================================================================== 
+ * File : animations.scss
+ * Description : CSS3 animations / transitions / effects
+ * Authors : Hamza Iqbal - hiqbal[at]infinitesquare.com
+/* =================================================================================== */	
+
+
+/* ============================================================= */
+/* STATES */
+/* ============================================================= */
+
+.fademove-enter-active,
+.fademove-leave-active
+{
+	transition: all 1s $transition-fn;
+}
+
+.fademove-enter,
+.fademove-leave-to 
+{
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+
+/* ============================================================= */
+/* ANIMATIONS */
+/* ============================================================= */
+
+/**
+ * Animated element
+ ******************************************/
+.wow
+{
+	visibility: hidden;
+}
+
+.animated
+{
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+
+/**
+ * Bouncer
+ ******************************************/
+@mixin bouncer-frames()
+{
+	0%, 100% { transform: scale(0.0); }
+	50% { transform: scale(1.0); }
+}
+
+@-webkit-keyframes bouncer 	{ @include bouncer-frames; }
+@-moz-keyframes bouncer 	{ @include bouncer-frames; }
+@-ms-keyframes bouncer		{ @include bouncer-frames; }
+@-o-keyframes bouncer		{ @include bouncer-frames; }
+@keyframes bouncer			{ @include bouncer-frames; }
+
+
+
+/**
+ * Spinner
+ ******************************************/
+@mixin spinner-frames()
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spinner 	{ @include spinner-frames; }
+@-moz-keyframes spinner 	{ @include spinner-frames; }
+@-ms-keyframes spinner		{ @include spinner-frames; }
+@-o-keyframes spinner		{ @include spinner-frames; }
+@keyframes spinner			{ @include spinner-frames; }
+
+.spinner
+{
+	animation-name: spinner;
+}
+
+
+/**
+ * Fade out
+ ******************************************/
+@mixin fadeOut-frames()
+{
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut 	{ @include fadeOut-frames; }
+@-moz-keyframes fadeOut 	{ @include fadeOut-frames; }
+@-ms-keyframes fadeOut		{ @include fadeOut-frames; }
+@-o-keyframes fadeOut		{ @include fadeOut-frames; }
+@keyframes fadeOut			{ @include fadeOut-frames; }
+
+.fadeOut
+{
+	animation-name: fadeOut;
+}
+
+
+/**
+ * Fade in
+ ******************************************/
+@mixin fadeIn-frames()
+{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn 	{ @include fadeIn-frames; }
+@-moz-keyframes fadeIn 		{ @include fadeIn-frames; }
+@-ms-keyframes fadeIn		{ @include fadeIn-frames; }
+@-o-keyframes fadeIn		{ @include fadeIn-frames; }
+@keyframes fadeIn			{ @include fadeIn-frames; }
+
+.fadeIn
+{
+	animation-name: fadeIn;
+}
+

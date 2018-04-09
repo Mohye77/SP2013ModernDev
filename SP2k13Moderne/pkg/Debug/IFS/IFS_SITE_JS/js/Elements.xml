@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="js" Path="js" Url="Style Library/IFS/js" RootWebOnly="TRUE">
+    <File Path="lib\jquery.js" Url="lib/jquery.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="lib\jquery.min.js" Url="lib/jquery.min.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="lib\bootstrap.js" Url="lib/bootstrap.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="lib\bootstrap.min.js" Url="lib/bootstrap.min.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />    
+    <File Path="lib\modernizr.min.js" Url="lib/modernizr.min.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="lib\browser-polyfill.min.js" Url="lib/browser-polyfill.min.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="lib\browser-polyfill.js" Url="lib/browser-polyfill.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+
+    <File Path="jquery.plugins.js" Url="jquery.plugins.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="jquery.plugins.min.js" Url="jquery.plugins.min.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="main.js" Url="main.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+    <File Path="main.min.js" Url="main.min.js" Type ="GhostableInLibrary" Level ="Published" IgnoreIfAlreadyExists="TRUE" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

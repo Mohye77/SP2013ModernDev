@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"removeComments": true,
+		"declaration": false,
+		"sourceMap": true,
+		"allowJs": true,
+		"target": "es5",
+		"module": "commonjs",
+
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"types": [
+			"node"
+		],
+		"lib": [
+            "es2016",
+            "dom",
+            "es5"
+		]
+	},
+	"files": []
+}
